@@ -8,10 +8,10 @@ This is the second seminar for the Smart Contract module.
 ---
 ## Solidity challenge puzzle
 
-Take a look at the solidity challenge puzzle, in the same directory on the Github page, and complete the following tasks:
+Take a look at the solidity challenge puzzle, Challenge.sol, in the same directory on the Github page, and complete the following tasks:
 
 ### Task 1
-Import the challenge puzzle into your oline Remix editor, then compile and run, then deploy, the script. Ensure you can deploy and interact with the puzzle. If you are stuck at this point ask a collegue for help.
+Import the challenge puzzle into your oline Remix editor, then compile and run, then deploy, the script. Ensure you can deploy and interact with the puzzle. If you are stuck at this point ask a colleague for help.
 
 ### Task 2
 Take a look at the remix code, and the deployment window, then answer the following questions:
