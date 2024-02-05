@@ -304,13 +304,15 @@ We are now going to take a deeper dive into digital signatures and encryption. W
 
 Using the software tool Kleopatra from https://gpg4win.org/download.html, or whichever tool you prefer, complete the following: 
 
-<!--
-* 1.A) Import the public key
-* 1.B) Check the public key and the fingerprint, what is the process, what is the fingerprint?
-* 1.C) Verify the signatures of the messages in G, and H. 
+Open the google sheet here: https://docs.google.com/spreadsheets/d/1XOUDAe3aG9kBYQocg5VqfUnRYSLQHAlS9-SbR5SVMKw/edit#gid=0 and select the tab: Sheet-A.
+
+* 1.A) Import both of the public keys
+* 1.B) Check the public key and the fingerprint, what is the process and what is the fingerprint doing?
+* 1.C) Verify the signatures of the messages in G, and H.
+  * Who are the messages from?
   * What does each message say?
   * Are they both valid messages?
-* 1.D) Try to decrypt the message in column I. What problems do you encounter and why?
+* 1.D) The second message 
 
 
 ### 2.2:
