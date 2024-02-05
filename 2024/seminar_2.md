@@ -1,4 +1,4 @@
-# Seminar 2 (released on 06/02/2024 at 17:30)
+# Seminar 2 (released on 07/02/2024 at 17:30)
 This is the second seminar for the Smart Contract module.
 - To complete this seminar, you may need to consult the lecture material and the related reading. 
 - You are expected to be able to complete it on your own, though you may work with people around you, and in some parts you may need to.
@@ -10,11 +10,10 @@ This is the second seminar for the Smart Contract module.
 
 '''j
 
-// SPDX-License-Identifier: GPL-3.0
+SPDX-License-Identifier: GPL-3.0
 pragma solidity >=0.7.0 <0.9.0;
 
 contract Challange {
-
     uint256 number;
     bytes32 SOLUTION = 0xeea8d3c6796b1d78edf75282b5762b3b7ff056c6a0641d45b009595167b0c714;
     bytes32 SLOG = 0x0000000000000000000000000000000000000000000000000000000000000000;
