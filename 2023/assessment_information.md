@@ -12,26 +12,25 @@ Participation in group and individual work in tutorials and lectures. Discussion
 ## Exam 
 The exam is a 2 hour online exam and comprises:
 - 20 multiple choice questions, and
-- 2 long form questions (out of a choice of 3)
+- 2 long form questions
 
 ### Multiple choice component
 - The multiple choice component makes up 40% of the exam
 - There will be a choice of 5 answers for each question
 - There are 20 marks available in total
 - A correct answer will award 1 marks
-- An incorrect answer will deduct 0.33 of a mark (be aware of the negative marking)
+- An incorrect answer will deduct 0.33 of a mark (be aware of negative marking)
 - You can select to not answer the question, in which case you will gain 0 marks
 - Questions are randomised and taken from a larger bank of questions
 
 ### Long form questions / written exam
-- There are 3 long form questions
-- You are expected to select and answer 2 of the 3 questions
+- There are 2 long form questions
 - Each question accounts for 30% of the exam (30 marks maximum per question)
 - A good way to prepare your answer for the long form question is to prepare it in your favourite text editing software and copy-paste in when you have your answer ready 
 
 ### Exam date and time
-The exam date is **10 / 05 / 2023 (10 May)**.
-- The exam is splot into two parts
+- The exam date and time information will be made available on the module page
+- The exam is split into two parts
 - The MCQ exam will be an ELE timed quiz, that will start at 9.30 and last for 40 minutes
 - The written exam will start at 11.00 and last for 1 hour and 20 minutes
 - Both exams are online 
