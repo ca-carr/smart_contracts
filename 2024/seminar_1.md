@@ -398,5 +398,11 @@ bcb8275028ae2e4dd1d2b45
 * 3.E) What would happen if we changed line 4 to `2CB3A540E8CF726A3D563D7A0F350724FCDB34FC`, does the script now execute correctly? If not, why not?
 
 ### Part 4 Putting it all together
+Using your knowledge from the previous parts, and the ASCII table online do the following:
+1. Encode your full name in a hexadecimal string using the ASCII conversion (if your name uses characters not in the ASCII list, use your judgment to substitute it)
+2. Hash the hexadecimal string of your name using the bitcoin smart contract editor from part 4
+3. Sign your string using your keys from part 2
+
+Answer the question: what steps does someone need to do in order to verify you have signed your name in this way?
 
 
