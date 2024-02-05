@@ -312,23 +312,27 @@ Open the google sheet here: https://docs.google.com/spreadsheets/d/1XOUDAe3aG9kB
   * Who are the messages from?
   * What does each message say?
   * Are they both valid messages?
-* 1.D) The second message 
+* 1.D) The second message contains compromising data. What is this data? How does it compromise the sender? What is the problem with the message?
 
 
 ### 2.2:
 
 Now we are going to generate our own key-pair and share it (you will need to work with someone to do this task)
 
-* 2.A) Generate a key pair
+* 2.A) In Kleopatra, generate a key pair. For the email address you may make one up, such as yourname@beem161.student
 * 2.B) Export your public key, and share it, along with your key fingerprint with your colleagues:
-	* what does this process do? 
-* 2.C) Sign a message --- the message can be anything you want -- and publish the signed message. Have a colleague verify your message
+ 	* You can use Sheet-B on the google sheet: https://docs.google.com/spreadsheets/d/1XOUDAe3aG9kBYQocg5VqfUnRYSLQHAlS9-SbR5SVMKw/edit#gid=237254850
+	* What does this process achieve? 
+* 2.C) Sign a message --- the message can be anything you want -- and publish the signed message. Have a colleague verify your message.
+  	* What steps do they have to take to verify your message in Kleopatra?
 * 2.D) Encrypt a message to a colleague of your choice -- it can be anything you want -- and answer the questions:
   * What process do you have to take to encrypt the message?
   * How is this different from the message signature aspect. 
 
--->
+### 2.3:
 
+Using your knowledge from part 2.1 and 2.2, sign and encrypt a message (anything you want) to billy@bad.key.management.beem161, (note that you will first have to ensure you have imported their public-key).
+What are immediate security concerns with this process? Can anyone other than Billy read your message?
 
 ---
 
