@@ -8,7 +8,7 @@ This is the second seminar for the Smart Contract module.
 ---
 ## Part 0: Solidity challenge puzzle
 
-'''js
+'''j
 
 // SPDX-License-Identifier: GPL-3.0
 pragma solidity >=0.7.0 <0.9.0;
