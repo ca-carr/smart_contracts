@@ -302,7 +302,7 @@ We are now going to take a deeper dive into digital signatures and encryption. W
 
 ### 2.1:
 
-Using the software tool Kleopatra from https://gpg4win.org/download.html, or whichever tool you prefer, complete the following: 
+Using the software tool Kleopatra for Windows from https://gpg4win.org/download.html or GPG Suite for MAC https://gpgtools.org/, or whichever tool you prefer, complete the following: 
 
 Open the google sheet here: https://docs.google.com/spreadsheets/d/1XOUDAe3aG9kBYQocg5VqfUnRYSLQHAlS9-SbR5SVMKw/edit#gid=0 and select the tab: Sheet-A.
 
