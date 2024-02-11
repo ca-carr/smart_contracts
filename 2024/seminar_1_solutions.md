@@ -197,3 +197,10 @@ Consider the altered transaction from 3.3, what is this extra information on Lin
 ```
 
 This extra information is the signature on the script, it is one of the inputs taken by the op_checksig command. This returns true, and so the transaction script is valid. 
+
+### Part 4
+
+This is a process to work through individually. An example is given:
+1) The ASCII to hex of Chris is 0x4368726973
+2) The hash using the Bitcoin editor is 0x6996B09C0B7D744A7BFD8BF28689086449DD2171631A1EBCC407669534FD2101 (think, in which order to you have to include the variables?)
+3) Completed in lectures
