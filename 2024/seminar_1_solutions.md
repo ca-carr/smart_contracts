@@ -15,7 +15,7 @@ Note that this number $226966287794050085446441574944861206500442108113164042$ i
 
 * 0.C) Do the same for 0.B, as for block number 1 in Bitcoin, using https://blockchair.com/bitcoin/. How do the numbers compare between 0.B and 0.C? Why is this?
 
-You will again see something similar to 0.B, but there will be fewer leading zeros. When converting the value to binary and decimal, we will see that the decimal equivalent will be far larger than the value from 0.B. This is because it is now harder to create a block in Bitcoin, and so as the difficulty has increased, the target value has decreased, so that now to create a block, the decimal equivalent of the hash output must be below a lower value.
+You will again see something similar to 0.B, but there will be fewer leading zeros. When converting the value to binary and decimal, we will see that the decimal equivalent will be far larger than the value from 0.B. This is because it is now harder to create a block in Bitcoin, and so as the difficulty has increased, the target value has decreased. It is now harder to create a block, and so the decimal equivalent of the hash output must be below a lower value. 
 
 
 ---
