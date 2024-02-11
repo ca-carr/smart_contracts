@@ -57,34 +57,20 @@ One of the text contains a sentence about the band ABBA, the others are very min
 
 ### 2.1:
 
-Take a look at the shared module document on ELE, in Row 2, columns E, F, G, H, I. 
-
-Using the software tool Kleopatra from https://gpg4win.org/download.html, or whichever tool you prefer, complete the following: 
-
-* 1.A) Import the public key
-* 1.B) Check the public key and the fingerprint, what is the process, what is the fingerprint?
-* 1.C) Verify the signatures of the messages in G, and H. 
-  * What does each message say?
-  * Are they both valid messages?
-* 1.D) Try to decrypt the message in column I. What problems do you encounter and why?
-
 For those using Linux or Windows based operating systems Kleopatra should be supported. For those using MAC, you can use GPG Suite (or if you are happy with the terminal, we can work there using the gpg commands).
-This is explained in the video lectures on Week 4.
+
+This process is covered in the lectures.
 
 
 ### 2.2:
 
-Now we are going to generate our own key-pair and share it (you will need to work with someone to do this task)
-
-* 2.A) Generate a key pair
-* 2.B) Export the public key, and share it on the shared module document on ELE under column E, and share your key fingerprint under column F
-* 2.C) Sign a message -- it can be anything you want (keep it acceptable!) -- and publish the signed message under column G, have a colleague verify your message
-* 2.D) Encrypt a message to a colleague of your choice -- it can be anything you want (keep it acceptable!) -- and answer the questions:
-  * What process do you have to take to encrypt the message?
-  * How is this different from the message signature aspect. 
-
-The solutions for the tasks in Part 2 are to follow through the steps above. For the two questions at the end, you are expected to think about how you need the public key of the recipient before you can encrypt a message to them, whereas you can sign a message immediately.
+The solutions for the tasks in Part 2 are to follow through the steps given with a colleague. For the two questions at the end, you are expected to think about how you need the public key of the recipient before you can encrypt a message to them, whereas you can sign a message immediately after creating a key.
 Encryption is different as only the recipient can actually view the message, whereas the public nature of the signature is essential to the verifiability.
+
+### 2.3:
+
+Billy shares his private key in his message, which they have made public. If you encrypt a message to him, anybody can use his private key to descrypt the message, and so can read your message. You can try this as an exercise.
+
 
 ---
 
