@@ -1,4 +1,4 @@
-# Seminar 2 (released on 07/02/2024 at 17:30)
+# Seminar 3 (released on 20/02/2024)
 This is the second seminar for the Smart Contract module.
 - To complete this seminar, you may need to consult the lecture material and the related reading. 
 - You are expected to be able to complete it on your own, though you may work with people around you, and in some parts you may need to.
