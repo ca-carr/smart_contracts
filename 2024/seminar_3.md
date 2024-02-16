@@ -37,3 +37,8 @@ It is important that you do not use a MetaMask that you use for real. This is on
 
 Now you should have something that looks like:
 <img width="800" alt="Screenshot 2024-02-16 154007" src="https://github.com/ca-carr/smart_contracts/assets/5767854/32c11f5d-6231-4d0e-88e4-246ae5cdb90a">
+
+
+Now we need to configure MetaMask to use the Polygon Mumbai chain. We can find out the details and add it at https://chainlist.org/ 
+
+Now we need to sign up to the website Alchemy to get some testnet coins, which we will use later.
