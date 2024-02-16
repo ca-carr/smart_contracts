@@ -26,6 +26,13 @@ Follow the instructions to solve the puzzle. Write down the solution string, and
 Create your own smart contract puzzle based on this template. The solution must be a simple word, and you can give hints as to the word. Feel free to adapt and improve on the solidity code, or add more functions. When you are done, test it, and share this contract with the Module Leader. It will be distributed to the class.
 
 
-## Deploying smart contracts
+# Deploying smart contracts
 
-# Step 1, the tools: Solidity, Remix, MetaMask, Alchemy and OpenZeppelin
+## Step 1, the tools: Solidity, Remix, MetaMask, Alchemy and OpenZeppelin
+
+First download a clean browser. We reccomend downloading the Brave browser https://brave.com/ 
+then loading up Brave, you can install MetaMask.
+
+It is important that you do not use a MetaMask that you use for real. This is only for the test.
+
+Now you should have something that looks like:
