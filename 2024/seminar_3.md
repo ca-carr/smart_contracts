@@ -77,6 +77,7 @@ contract BEEMERS is ERC20, Ownable, ERC20Permit {
         _mint(msg.sender, 1000000 * 10 ** decimals());
     }
 
+
     function mint(address to, uint256 amount) public onlyOwner {
         _mint(to, amount);
     }
@@ -84,7 +85,18 @@ contract BEEMERS is ERC20, Ownable, ERC20Permit {
 ```
 
 ## Step 2
+We are now going to deply the contract on the Polygon testnet network.
+First we are importning the code, then we are going to Compile and run the script as before.
 
+To do this, we go to the deployment section
+<ol>
+    <li> Select Deploy   </li>
+    <li> Select Injected Provider - MetaMask </li>
+    <li> Select the one account that you should have </li>
+    <li> Make sure that the account you have is in the deploy section</li>
+</ol>
+The steps correspond to the image
+<img width="800" alt="Screenshot 2024-02-16 160643" src="https://github.com/ca-carr/smart_contracts/assets/5767854/935f59ce-89a5-4cbe-bc72-4747747af803">
 
 
 
