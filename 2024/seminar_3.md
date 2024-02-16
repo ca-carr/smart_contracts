@@ -60,7 +60,7 @@ Once this is all done we can open Remix in our brave browser and open a contract
 Rather than do this from scratch, we are going to follow a template. We can use OpenZeppelin for the templates: https://docs.openzeppelin.com/contracts/5.x/wizard
 
 We are going to use the contract wizard, here is some code we have made earlier 
-'sol
+'''sol
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.20;
 
@@ -81,10 +81,7 @@ contract BEEMERS is ERC20, Ownable, ERC20Permit {
         _mint(to, amount);
     }
 }
-
-
-
-'
+'''
 
 
 
