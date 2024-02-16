@@ -25,3 +25,7 @@ Follow the instructions to solve the puzzle. Write down the solution string, and
 ### Task 4
 Create your own smart contract puzzle based on this template. The solution must be a simple word, and you can give hints as to the word. Feel free to adapt and improve on the solidity code, or add more functions. When you are done, test it, and share this contract with the Module Leader. It will be distributed to the class.
 
+
+## Deploying smart contracts
+
+# Step 1, the tools: Solidity, Remix, MetaMask, Alchemy and OpenZeppelin
