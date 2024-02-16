@@ -100,6 +100,35 @@ The steps correspond to the image
 
 In a few seconds you should get a confirmation that your smart contract has been deployed on the network, huzzah!
 
+Now before we stop here, it is important that we note down a couple of things that we will need for the next step. The first is the contract address. In the example here it is $0x28520f1196b15bbc66278c0c2ec5c2dc99da2975$, and we will need the contract ABI, which is very long, but starts like:
+
+```js
+[
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "spender",
+				"type": "address"
+			},
+			{
+				"internalType": "uint256",
+				"name": "value",
+				"type": "uint256"
+			}
+		],
+		"name": "approve",
+		"outputs": [
+	...
+ ...
+ ...
+ ... 
+]
+```
+
+Save both to a .txt file, called contract_address.txt and contract_abi.txt on your local machine. 
+
+
 ## Step 3
 Fresh from your success of steps 1 and 2, we are now going to find out how we can interact with these testnet smart contracts.
 
