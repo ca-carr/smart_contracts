@@ -129,14 +129,14 @@ Now before we stop here, it is important that we note down a couple of things th
 
 <img width="800" alt="Contract address" src="https://github.com/ca-carr/smart_contracts/assets/5767854/6325888d-e579-4faf-89db-1a4b229b9a50">
 
-<img width="561" alt="Screenshot 2024-02-16 162735" src="https://github.com/ca-carr/smart_contracts/assets/5767854/a9d4922b-f0d5-499f-ae08-bf227722a1fc">
-
-
 Save both to a .txt file, called contract_address.txt and contract_abi.txt on your local machine. 
 
+<img width="561" alt="Screenshot 2024-02-16 162735" src="https://github.com/ca-carr/smart_contracts/assets/5767854/a9d4922b-f0d5-499f-ae08-bf227722a1fc">
 
 ## Step 3
 Fresh from your success of steps 1 and 2, we are now going to find out how we can interact with these testnet smart contracts.
+
+First we are going to open a new .txt document, and call it interact.html. In windows it is easier to the Notepad app.
 
 
 
