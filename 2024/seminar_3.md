@@ -41,4 +41,18 @@ Now you should have something that looks like:
 
 Now we need to configure MetaMask to use the Polygon Mumbai chain. We can find out the details and add it at https://chainlist.org/ 
 
+In our Brave browser we need to:
+- go to https://chainlist.org/
+- search for the Polygon network
+- Select include testnets
+- Connect to Polygon Mumbai
+
+
 Now we need to sign up to the website Alchemy to get some testnet coins, which we will use later.
+To get the coins: 
+- https://www.alchemy.com/faucets/polygon-mumbai
+- Sign up to alchemy if you need to
+- Insert your address and select 'send me MATIC'
+
+
+
