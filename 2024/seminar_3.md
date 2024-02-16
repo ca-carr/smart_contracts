@@ -98,6 +98,11 @@ To do this, we go to the deployment section
 The steps correspond to the image
 <img width="800" alt="Screenshot 2024-02-16 160643" src="https://github.com/ca-carr/smart_contracts/assets/5767854/935f59ce-89a5-4cbe-bc72-4747747af803">
 
+In a few seconds you should get a confirmation that your smart contract has been deployed on the network, huzzah!
+
+## Step 3
+Fresh from your success of steps 1 and 2, we are now going to find out how we can interact with these testnet smart contracts.
+
 
 
 
