@@ -36,3 +36,4 @@ then loading up Brave, you can install MetaMask.
 It is important that you do not use a MetaMask that you use for real. This is only for the test.
 
 Now you should have something that looks like:
+<img width="800" alt="Screenshot 2024-02-16 154007" src="https://github.com/ca-carr/smart_contracts/assets/5767854/32c11f5d-6231-4d0e-88e4-246ae5cdb90a">
