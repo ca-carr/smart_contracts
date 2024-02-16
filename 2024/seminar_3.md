@@ -91,9 +91,9 @@ First we are importning the code, then we are going to Compile and run the scrip
 To do this, we go to the deployment section
 <ol>
     <li> Select Deploy   </li>
-    <li> Select Injected Provider - MetaMask </li>
+    <li> Select Injected Provider - MetaMask (you may have to authorise MetaMask) </li>
     <li> Select the one account that you should have </li>
-    <li> Make sure that the account you have is in the deploy section</li>
+    <li> Make sure that the account you have is in the deploy section, and hit deploy (again you may have to authorise MetaMask) </li>
 </ol>
 The steps correspond to the image
 <img width="800" alt="Screenshot 2024-02-16 160643" src="https://github.com/ca-carr/smart_contracts/assets/5767854/935f59ce-89a5-4cbe-bc72-4747747af803">
