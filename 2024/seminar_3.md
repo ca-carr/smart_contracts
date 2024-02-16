@@ -54,5 +54,40 @@ To get the coins:
 - Sign up to alchemy if you need to
 - Insert your address and select 'send me MATIC'
 
+Once this is all done we can open Remix in our brave browser and open a contract file. 
+- In the contract foler we are going to make a new solidity smart contract for a ERC-20 token. This allows us to create our own tokens!
+
+Rather than do this from scratch, we are going to follow a template. We can use OpenZeppelin for the templates: https://docs.openzeppelin.com/contracts/5.x/wizard
+
+We are going to use the contract wizard, here is some code we have made earlier 
+'sol
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.20;
+
+import "@openzeppelin/contracts/token/ERC20/ERC20.sol";
+import "@openzeppelin/contracts/access/Ownable.sol";
+import "@openzeppelin/contracts/token/ERC20/extensions/ERC20Permit.sol";
+
+contract BEEMERS is ERC20, Ownable, ERC20Permit {
+    constructor(address initialOwner)
+        ERC20("BEEMERS", "BMR")
+        Ownable(initialOwner)
+        ERC20Permit("BEEMERS")
+    {
+        _mint(msg.sender, 1000000 * 10 ** decimals());
+    }
+
+    function mint(address to, uint256 amount) public onlyOwner {
+        _mint(to, amount);
+    }
+}
+
+
+
+'
+
+
+
+
 
 
