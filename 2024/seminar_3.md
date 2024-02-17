@@ -140,7 +140,8 @@ First we need to install Visual Studio Code, linke here: https://code.visualstud
 
 Once installed we will open it, and navigate to our local directory we created called seminar3. 
 It should look something like the image below.
-![Screenshot 2024-02-17 095506](https://github.com/ca-carr/smart_contracts/assets/5767854/653ce67c-8cfb-4134-8d46-a17b57996924)
+
+<img width="800" alt="Contract address" src="https://github.com/ca-carr/smart_contracts/assets/5767854/653ce67c-8cfb-4134-8d46-a17b57996924">
 
  Now we are going to test our connection to the local server.
 
