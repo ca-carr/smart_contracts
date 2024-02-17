@@ -174,5 +174,7 @@ Next we are going to install the Live Server Extension in VS Code. The extension
 
 Select to install it, and once it is installed we will navigate to our seminar3 folder in VS Code, then right click on connect.html and select Open With Live Server.
 
+Now we should see our website open in our broawer. Since this will likely not be our Brave browser (where we have our testnet account), we can copy and paste the URL into our brave browser. The URL should look something like: http://127.0.0.1:5500/connect.html
+
 
 
