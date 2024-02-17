@@ -172,7 +172,7 @@ First create a new file called connect.html, and enter the code below. We can do
 Next we are going to install the Live Server Extension in VS Code. The extensions panel is 5 steps dowwn on the left of the VS Code display.
 <img width="800" alt="Contract address" src="https://github.com/ca-carr/smart_contracts/assets/5767854/d3f1f93f-47f6-43cd-993c-0babac9f87a1">
 
-Select to install it
+Select to install it, and once it is installed we will navigate to our seminar3 folder in VS Code, then right click on connect.html and select Open With Live Server.
 
 
 
