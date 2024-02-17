@@ -176,7 +176,9 @@ Select to install it, and once it is installed we will navigate to our seminar3 
 
 Now we should see our website open in our broawer. Since this will likely not be our Brave browser (where we have our testnet account), we can copy and paste the URL into our brave browser. The URL should look something like: http://127.0.0.1:5500/connect.html
 
-Now we should be able to press the connect button and MetaMask will prompt us to connect to the website.
+Now we should be able to press the connect button and MetaMask will prompt us to connect to the website. 
+
+We can also disconnect to the webiste from MetaMask itself. This is somehting we should take care to do.
 
 
 
