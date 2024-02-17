@@ -138,9 +138,11 @@ Fresh from your success of steps 1 and 2, we are now going to find out how we ca
 
 First we need to install Visual Studio Code, linke here: https://code.visualstudio.com/download
 
-Once installed we will open it, and navigate to our local directory we created called seminar3.
+Once installed we will open it, and navigate to our local directory we created called seminar3. 
+It should look something like the image below.
+![Screenshot 2024-02-17 095506](https://github.com/ca-carr/smart_contracts/assets/5767854/653ce67c-8cfb-4134-8d46-a17b57996924)
 
-
+ Now we are going to test our connection to the local server.
 
 
 
