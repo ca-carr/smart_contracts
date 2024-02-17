@@ -136,14 +136,43 @@ Save both to a .txt file, called contract_address.txt and contract_abi.txt on yo
 ## Step 3
 Fresh from your success of steps 1 and 2, we are now going to find out how we can interact with these testnet smart contracts.
 
-First we need to install Visual Studio Code, linke here: https://code.visualstudio.com/download
+First we need to install Visual Studio Code (VS code), linke here: https://code.visualstudio.com/download
 
 Once installed we will open it, and navigate to our local directory we created called seminar3. 
 It should look something like the image below.
 
 <img width="800" alt="Contract address" src="https://github.com/ca-carr/smart_contracts/assets/5767854/653ce67c-8cfb-4134-8d46-a17b57996924">
 
- Now we are going to test our connection to the local server.
+ Now we are going to test our connection to the local server. 
+
+First create a new file called connect.html, and enter the code below. We can do this in VS code.
+ ```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Connect to MetaMask</title>
+    <script>
+        async function connectToMetaMask() {
+            if (typeof window.ethereum !== 'undefined') {
+                console.log('MetaMask is installed!');
+                // Request account access, errors will be logged to the console automatically
+                const accounts = await window.ethereum.request({ method: 'eth_requestAccounts' });
+                console.log('Connected account:', accounts[0]);
+            }
+        }
+    </script>
+</head>
+<body>
+    <button onclick="connectToMetaMask()">Connect to MetaMask</button>
+</body>
+</html>
+```
+
+Next we are going to install the Live Server Extension in VS Code. The extensions panel is 5 steps dowwn on the left of the VS Code display.
+<img width="800" alt="Contract address" src="https://github.com/ca-carr/smart_contracts/assets/5767854/d3f1f93f-47f6-43cd-993c-0babac9f87a1">
+
+Select to install it
 
 
 
