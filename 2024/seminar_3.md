@@ -162,5 +162,67 @@ Now we should be able to press the connect button and MetaMask will prompt us to
 
 We can also disconnect to the webiste from MetaMask itself. This is somehting we should take care to do.
 
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BEEMERS Contract Interaction</title>
+    <script src="https://cdn.jsdelivr.net/npm/web3@1.3.0/dist/web3.min.js"></script>
+</head>
+<body>
+    <h1>BEEMERS Contract Interaction</h1>
+    <button id="connectButton">Connect to MetaMask</button>
+    <div id="mintFunction" style="display:none;">
+        <input type="text" id="mintToAddress" placeholder="Address to Mint To">
+        <input type="number" id="mintAmount" placeholder="Amount to Mint">
+        <button onclick="mintTokens()">Mint Tokens</button>
+    </div>
+
+    <script>
+        let web3;
+        let myContract;
+        const contractABI = [ ];
+	        const contractAddress = '0x28520f1196b15bbc66278c0c2ec5c2dc99da2975';
+
+        window.addEventListener('load', async () => {
+            if (typeof window.ethereum !== 'undefined') {
+                web3 = new Web3(window.ethereum);
+                myContract = new web3.eth.Contract(contractABI, contractAddress);
+            } else {
+                alert('MetaMask is not installed.');
+            }
+
+            document.getElementById('connectButton').addEventListener('click', async () => {
+                try {
+                    await window.ethereum.request({ method: 'eth_requestAccounts' });
+                    document.getElementById('mintFunction').style.display = 'block';
+                } catch (error) {
+                    console.error('Could not connect to MetaMask:', error);
+                }
+            });
+        });
+
+        async function mintTokens() {
+            const mintToAddress = document.getElementById('mintToAddress').value;
+            const mintAmount = document.getElementById('mintAmount').value;
+            const accounts = await web3.eth.getAccounts();
+            const account = accounts[0]; // Using the first account in MetaMask
+
+            try {
+                const mintReceipt = await myContract.methods.mint(mintToAddress, web3.utils.toWei(mintAmount, 'ether')).send({ from: account });
+                console.log('Mint transaction receipt: ', mintReceipt);
+                alert('Minting successful!');
+            } catch (error) {
+                console.error('Minting failed: ', error);
+                alert('Minting failed!');
+            }
+        }
+    </script>
+</body>
+</html>
+```
+
+
 
 
