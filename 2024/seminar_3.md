@@ -41,7 +41,7 @@ Once this is all done we can open Remix in our brave browser and open a contract
 
 Rather than do this from scratch, we are going to follow a template. We can use OpenZeppelin for the templates: https://docs.openzeppelin.com/contracts/5.x/wizard
 
-We are going to use the contract wizard, here is some code we have made earlier 
+We are going to use the contract wizard, here is some code we have made earlier, do not copy this code, rather use the one from the Wizard from Openzeppelin. Remember to come up with a unique name for your token. 
 ```sol
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.20;
@@ -222,6 +222,11 @@ We can also disconnect to the webiste from MetaMask itself. This is somehting we
 </body>
 </html>
 ```
+
+1. Save, edit this file and open it in the live server.
+2. Connect as before, to your metamask in your brave browser
+3. Connect the MetaMask, and mint your tokens
+4. Try sending your tokens to another address (it can be your friends address)
 
 
 
