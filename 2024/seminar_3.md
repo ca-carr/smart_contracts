@@ -182,8 +182,8 @@ We can also disconnect to the webiste from MetaMask itself. This is somehting we
     <script>
         let web3;
         let myContract;
-        const contractABI = [ ];
-	        const contractAddress = '0x28520f1196b15bbc66278c0c2ec5c2dc99da2975';
+        const contractABI = [ COPY IN YOUR ABI ];
+	const contractAddress = ' COPY IN YOUR ADDRESS ';
 
         window.addEventListener('load', async () => {
             if (typeof window.ethereum !== 'undefined') {
