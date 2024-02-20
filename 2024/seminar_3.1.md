@@ -75,4 +75,9 @@ We are also going to need an image. The image I have chosen is at the url: https
 ![Screenshot 2024-02-20 214915](https://github.com/ca-carr/smart_contracts/assets/5767854/eb86984e-368b-4db8-934a-8f413346104f)
 
 
+## Step 2
+
+- I will now open this and deploy from Remix to my account like before
+
+
 
