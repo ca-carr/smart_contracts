@@ -59,7 +59,7 @@ contract BEEMERS is ERC20, Ownable, ERC20Permit {
         _mint(to, amount);
     }
 }
--->
+
 
 ** https://drive.google.com/file/d/1Hy9Z2DbyXc3O-LltNVZvueWFEbSEw3z6/view?usp=sharing **
 
