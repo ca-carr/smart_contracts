@@ -12,6 +12,7 @@ Welcome to the third seminar of the Smart Contract module. This session aims to 
 ## Prerequisites
 - Basic knowledge of Solidity, MetaMask, and web development.
 - Access to lecture materials and related readings.
+![Screenshot 2024-02-20 214915](https://github.com/ca-carr/smart_contracts/assets/5767854/81bfbd75-3edc-417a-80ad-019ca9a56851)
 
 ## Note
 - This seminar is designed to complement your exam preparation.
@@ -68,9 +69,10 @@ Following the steps from the previous seminar, we are now going to create our ow
 We can use the Openzeppelin WIzard https://wizard.openzeppelin.com/
 
 
-We are also going to need an image. The image I have chosen is at the url: https://drive.google.com/file/d/1Hy9Z2DbyXc3O-LltNVZvueWFEbSEw3z6/view?usp=sharing which is encoded in the smart contract in the Wizard
+We are also going to need an image. The image I have chosen is at the url: https://drive.google.com/file/d/1Hy9Z2DbyXc3O-LltNVZvueWFEbSEw3z6/view?usp=sharing which is encoded in the smart contract in the Wizard. I have also selected mintable and increment ids. You do not need to do this yourself, but you can do.
 
 
+![Screenshot 2024-02-20 214915](https://github.com/ca-carr/smart_contracts/assets/5767854/eb86984e-368b-4db8-934a-8f413346104f)
 
 
 
