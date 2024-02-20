@@ -224,9 +224,14 @@ We can also disconnect to the webiste from MetaMask itself. This is somehting we
 ```
 
 1. Save, edit this file and open it in the live server.
-2. Connect as before, to your metamask in your brave browser
-3. Connect the MetaMask, and mint your tokens
+2. Connect as before, to your metamask in your brave browser.
+3. Connect the MetaMask, and mint your tokens.
 4. Try sending your tokens to another address (it can be your friends address)
+
+----
+ ## Next steps
+  Now we may want to list this token somewhere, or make it available for others to use. How can we do this? Take a look for services that allow you to list your testnet token.
+
 
 
 
