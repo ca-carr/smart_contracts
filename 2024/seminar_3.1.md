@@ -61,3 +61,16 @@ contract BEEMERS is ERC20, Ownable, ERC20Permit {
 -->
 
 ** https://drive.google.com/file/d/1Hy9Z2DbyXc3O-LltNVZvueWFEbSEw3z6/view?usp=sharing **
+
+
+Following the steps from the previous seminar, we are now going to create our own NFT:
+
+We can use the Openzeppelin WIzard https://wizard.openzeppelin.com/
+
+
+We are also going to need an image. The image I have chosen is at the url: https://drive.google.com/file/d/1Hy9Z2DbyXc3O-LltNVZvueWFEbSEw3z6/view?usp=sharing which is encoded in the smart contract in the Wizard
+
+
+
+
+
