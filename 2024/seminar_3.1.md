@@ -70,7 +70,12 @@ We will use a lot of the same steps from Seminar 3
 
 ## Step 1, getting your NFT image out-there
 
-First you need to make an image you would like to upload. I suggest you simply get an image that you like
+First you need to make an image you would like to upload. I suggest you simply get an image that you like that **you own**.
+It can be anything.
+
+## Step 2, getting an image
+
+Next we are going to use the webite https://www.pinata.cloud/ to upload our image
 
 
 Following the steps from the previous seminar, we are now going to create our own NFT!
