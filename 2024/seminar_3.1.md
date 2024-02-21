@@ -87,22 +87,25 @@ You can use the CID hash to find your image in the IPFS framework: https://ipfs.
 
 Here is the one I created for example: https://ipfs.io/ipfs/Qmeaa9KRsSVhN5d2jFvdYS8u8VTuMfK3mpphW1PBkFpVM5
 
-Great, now we have a location of our file we can start to 
+Now we have a location of our file on IPFS we can add it to the smart contract.
 
-Following the steps from the previous seminar, we are now going to create our own NFT!
-
+Following the steps from the previous seminar, we are now going to create our own NFT, and again we can use the NFT wizard.
 We can use the Openzeppelin WIzard https://wizard.openzeppelin.com/
 
-
-We are also going to need an image. The image I have chosen is at the url: https://drive.google.com/file/d/1Hy9Z2DbyXc3O-LltNVZvueWFEbSEw3z6/view?usp=sharing which is encoded in the smart contract in the Wizard. I have also selected mintable and increment ids. You do not need to do this yourself, but you can do.
+Below is an example image. 
 
 
 ![Screenshot 2024-02-20 214915](https://github.com/ca-carr/smart_contracts/assets/5767854/eb86984e-368b-4db8-934a-8f413346104f)
 
 
 ## Step 2
+Discover the process of NFT formation, and answer the questions:
+- What is the URI, and how do you include it?
+- How do you create your NFT contract
+- How do you mint your NFT contract
+- How can you import it into your wallet?
+- How do you look up the image?
 
-- I will now open this and deploy from Remix to my account like before
 
 
 
