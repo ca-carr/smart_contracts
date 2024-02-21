@@ -83,7 +83,11 @@ Next we are going to use the webite https://www.pinata.cloud/ to upload our imag
 Once you have the image you should get a CID. 
 Question, what does CID stand for?
 
-You can use the CID hash to find your image in the IPFS framework: https://ipfs.io/ipfs/Qmeaa9KRsSVhN5d2jFvdYS8u8VTuMfK3mpphW1PBkFpVM5
+You can use the CID hash to find your image in the IPFS framework: https://ipfs.io/ipfs/{insert-your-CID}
+
+Here is the one I created for example: https://ipfs.io/ipfs/Qmeaa9KRsSVhN5d2jFvdYS8u8VTuMfK3mpphW1PBkFpVM5
+
+Great, now we have a location of our file we can start to 
 
 Following the steps from the previous seminar, we are now going to create our own NFT!
 
