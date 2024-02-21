@@ -19,7 +19,8 @@ Welcome to the third seminar of the Smart Contract module. This session aims to 
 - Collaboration is encouraged, but ensure you understand the material independently.
 - Feel free to ask for help if needed.
 
----
+---![Screenshot 2024-02-21 125204](https://github.com/ca-carr/smart_contracts/assets/5767854/5a35db11-cf47-4cb5-8b94-1afb02dc5980)
+
 
 ## Step 1: Setup and Tools
 
@@ -73,9 +74,14 @@ We will use a lot of the same steps from Seminar 3
 First you need to make an image you would like to upload. I suggest you simply get an image that you like that **you own**.
 It can be anything.
 
-## Step 2, getting an image
+## Step 2, uploading the image
 
 Next we are going to use the webite https://www.pinata.cloud/ to upload our image
+
+![Screenshot 2024-02-21 125204](https://github.com/ca-carr/smart_contracts/assets/5767854/5a35db11-cf47-4cb5-8b94-1afb02dc5980)
+
+Once you have the image you should get a CID. 
+Question, what does CID stand for?
 
 
 Following the steps from the previous seminar, we are now going to create our own NFT!
