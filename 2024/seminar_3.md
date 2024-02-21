@@ -233,6 +233,15 @@ We can also disconnect to the webiste from MetaMask itself. This is somehting we
   Now we may want to list this token somewhere, or make it available for others to use. How can we do this? Take a look for services that allow you to list your testnet token.
 
 
+## Additional items for the ERC-20 token
+
+1) First, import your token from the contract address that created your token. What steps do you need to do to achieve this?
+2) Send your token to a member of your group
+3) Update your front-end html page to include the other functions your contract has, such as sending to another address. You can use remix to find the other functions that you can call
+
+# NFT contract
+Look up Seminar 3.1, where there is a guide to get started on creating an NFT and putting it on the metamask blockchain
+
 
 
 
