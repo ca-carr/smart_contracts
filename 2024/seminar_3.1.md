@@ -98,7 +98,7 @@ Below is an example image.
 ![Screenshot 2024-02-20 214915](https://github.com/ca-carr/smart_contracts/assets/5767854/eb86984e-368b-4db8-934a-8f413346104f)
 
 
-## Step 2
+## Step 3
 Discover the process of NFT formation, and answer the questions:
 - What is the URI, and how do you include it?
 - How do you create your NFT contract
