@@ -59,12 +59,21 @@ contract BEEMERS is ERC20, Ownable, ERC20Permit {
         _mint(to, amount);
     }
 }
+-->
+
+Following the steps from the previous seminar, we are now going to create our own NFT!
+
+As an example I am going to use the image here: https://drive.google.com/file/d/1Hy9Z2DbyXc3O-LltNVZvueWFEbSEw3z6/view?usp=sharing and use it to create an NFT.
+
+We will use a lot of the same steps from Seminar 3
 
 
-** https://drive.google.com/file/d/1Hy9Z2DbyXc3O-LltNVZvueWFEbSEw3z6/view?usp=sharing **
+## Step 1, getting your NFT image out-there
+
+First you need to make an image you would like to upload. I suggest you simply get an image that you like
 
 
-Following the steps from the previous seminar, we are now going to create our own NFT:
+Following the steps from the previous seminar, we are now going to create our own NFT!
 
 We can use the Openzeppelin WIzard https://wizard.openzeppelin.com/
 
