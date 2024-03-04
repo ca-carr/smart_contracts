@@ -1,3 +1,6 @@
+The plan for Seminar 4 is to follow through Darren's work.
+
+
 <!--
 ```js
 // SPDX-License-Identifier: MIT
