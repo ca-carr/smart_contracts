@@ -9,7 +9,7 @@
 | Module credit: |	15 |
 | ECTS value:	| 7.5 |
 | Pre-requisites:	| BEEM061 |
-| Duration : | 11 weeks |
+| Duration : | 11 Weeks |
 
 # Module aims
 
