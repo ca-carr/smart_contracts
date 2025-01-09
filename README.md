@@ -13,7 +13,7 @@
 | Pre-requisites:	| BEEM061 |
 | Duration : | 11 Weeks |
 
-# Module aims
+# Aims
 
 This module is designed to teach you the fundamentals of smart contracts.
 By the end of the module you will feel comfortable discussing smart contracts in detail.
