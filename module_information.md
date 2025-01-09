@@ -4,7 +4,7 @@
 | Module Title:  | Smart Contracts | 
 | Module code:   | BEEM161 | 
 | Module level:	 | M |
-| Academic year: | Began 2022/23, running 2024 |
+| Academic years: | 2022/23, 2023/24, 2024/25 |
 | Module leader:	| Dr Christopher Carr|
 | Module credit: |	15 |
 | ECTS value:	| 7.5 |
@@ -17,7 +17,6 @@ This module is designed to teach you the fundamentals of smart contracts.
 By the end of the module you will feel comfortable discussing smart contracts in detail.
 You will have the knowledge and tools to begin development of a smart contract of your own.
 You will also further develop your understanding of blockchain and decentralised systems.
-
 
 The module builds from a focus on blockchain and cryptocurrency foundations, to describing smart contracts in abstraction, and deploying concrete instantiations.
 
