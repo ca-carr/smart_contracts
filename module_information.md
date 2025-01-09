@@ -124,9 +124,10 @@ Full assessment details are described in the assessment section <a href="/assess
 
 # Background reading and other related material
 ### Primary reading material for the module is as follows
-1. Bitcoin and Cryptocurrency Technologies - A Comprehensive Introduction. by Arvind Narayanan, Joseph Bonneau, Edward W. Felten, Andrew Miller and Steven Goldfeder. ISBN = 978-0-691-17169-2. Available online here: https://bitcoinbook.cs.princeton.edu/ including video lectures and a pre-publication draft.
-2. Bitcoin: A peer-to-peer electronic cash system. by Satoshi Nakamoto. Available online here: https://www.debr.io/article/21260.pdf and here: https://www.ussc.gov/sites/default/files/pdf/training/annual-national-training-seminar/2018/Emerging_Tech_Bitcoin_Crypto.pdf 
-3. Mastering Ethereum. by Andreas M. Antonopoulos and Gavin Wood. Available here: https://github.com/ethereumbook/ethereumbook
+1. Blockchainbook - Online material and exercises, by Christopher Carr. Available here: https://blockchainbook.cacarr.com/
+2. Bitcoin and Cryptocurrency Technologies - A Comprehensive Introduction. by Arvind Narayanan, Joseph Bonneau, Edward W. Felten, Andrew Miller and Steven Goldfeder. ISBN = 978-0-691-17169-2. Available online here: https://bitcoinbook.cs.princeton.edu/ including video lectures and a pre-publication draft.
+3. Bitcoin: A peer-to-peer electronic cash system. by Satoshi Nakamoto. Available online here: https://www.debr.io/article/21260.pdf and here: https://www.ussc.gov/sites/default/files/pdf/training/annual-national-training-seminar/2018/Emerging_Tech_Bitcoin_Crypto.pdf 
+4. Mastering Ethereum. by Andreas M. Antonopoulos and Gavin Wood. Available here: https://github.com/ethereumbook/ethereumbook
 
 ### Additional reading is made available
 - On the lecture slides, and
