@@ -1,4 +1,4 @@
-# Seminar 1 (released on 24/01/2024 at 17:30, Extended to 06/02/2024)
+# Seminar 1 2025
 This is the first seminar for the Smart Contract module.
 - To complete this seminar, you may need to consult the lecture material and the related reading. 
 - You are expected to be able to complete it on your own, though you may work with people around you, and in some parts you may need to.
@@ -25,11 +25,11 @@ This is the first seminar for the Smart Contract module.
 	- 0x00000078
 	- 0000000010110111011
 
-* 0.B) Using the website block explorer https://blockchair.com/bitcoin/, take a look the latest block in Bitcoin. Select the hex string that is the block's header. Using whatever tools you prefer, convert this block header to binary and decimal. 
+* 0.B) Using the website block explorer https://blockchair.com/bitcoin/, take a look block 880,064 in Bitcoin. Select the hex string that is the block's header. Using whatever tools you prefer, convert this block header to binary and decimal. 
 
-* 0.C) Do the same for question 0.B, for the genesis block in Bitcoin, (You may use https://blockchair.com/bitcoin/). How do the numbers compare between 0.B and 0.C? Why are the numbers so different?
+* 0.C) Do the same for question 0.B but for the genesis block in Bitcoin, (You may use https://blockchair.com/bitcoin/). How do the numbers compare between 0.B and 0.C? Why are the numbers so different?
 
-* 0.D) Take a look at a recent transaction in Bitcoin, and compare that with one in Ethereum. What can you say about the transaction in either network? Does the start of the tranaction in Bitcoin have any number of zeros? If not, why not?
+* 0.D) Take a look at a recent transaction in Bitcoin, and compare that with one in Ethereum. Write down the transaction hash of both. What can you say about the transaction in either network? Does the start of the tranaction in Bitcoin have any number of zeros? If not, why not?
 
 ---
 ## Part 1: Hash functions
@@ -43,9 +43,13 @@ From another text we have the partial digest: `154f7e42`, which is the last 4 by
 
 ### Task 
 Using the online tool <a href="https://cryptii.com/"> cryptii</a>, identify all of the legitimate texts and all the illegitimate ones.
-> Make sure to calibrate cryptii to take text input, apply the correct hash function, and produce hexadecimal output
+> Make sure to calibrate cryptii to take text input, apply the correct hash function, and produce hexadecimal output.
 
-Try to answer the questions: How can we be sure of the legitimacy? What is the purpose of the hash function in this case? What might we call a partial digest, and can we comment on its security? Where have the identified illegitimate texts been changed?
+Answer the questions:  
+- How can we be sure of the legitimacy? 
+- What is the purpose of the hash function in this case?
+- What might we call a partial digest, and can we comment on its security?
+- Where have the identified illegitimate texts been changed?
 
 A)
 ```
