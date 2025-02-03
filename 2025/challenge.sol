@@ -33,6 +33,7 @@ contract Challange {
     }
 
     // FUNCTION A.4: Check number solution
+    // hint: this is a number puzzle, the number is 2 or 3 digits, and will be a common number we have seen.
     function check_number_solution() public returns (bool) { 
         bytes32 computedHash = keccak256(abi.encodePacked(number));
         
@@ -99,6 +100,6 @@ contract Challange {
 
     // PART C: 
     // Write a function to check if poth puzzles are solved, then return the values of the solutions
-    // Comment on the security of this smart ocntract puzzle
+    // Comment on the security of this smart contract puzzle
 
 }
