@@ -19,14 +19,17 @@ Once installed you can open it and install the MetaMask extension: https://metam
 Now you should have something that looks like:
 <img width="800" alt="Screenshot 2024-02-16 154007" src="https://github.com/ca-carr/smart_contracts/assets/5767854/32c11f5d-6231-4d0e-88e4-246ae5cdb90a">
 
-
-Now we need to configure MetaMask to use the Polygon Mumbai chain. We can find out the details and add it at https://chainlist.org/ 
+Now we need to configure MetaMask to use either the Ethereum Holesky, Ethereum Sepolia or the Polygon Mumbai chain. We can find the details of the chain we wish to use here: https://chainlist.org/ 
 
 In our Brave browser we need to:
 - go to https://chainlist.org/
-- search for the Polygon network
+- search for our chosen network
 - Select include testnets
-- Connect to Polygon Mumbai
+- Connect to that network
+
+For example, if we want to use Holesky we will find the chain ID and the servers here:
+<img width="1126" alt="image" src="https://github.com/user-attachments/assets/49605a1b-eb52-426e-92ac-214e6062f772" />
+
 
 
 Now we need to sign up to the website Alchemy to get some testnet coins, which we will use later.
