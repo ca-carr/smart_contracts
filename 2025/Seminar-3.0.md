@@ -152,7 +152,7 @@ First create a new file called connect.html, and enter the code below. We can do
 </html>
 ```
 
-Next we are going to install the Live Server Extension in VS Code. The extensions panel is 5 steps dowwn on the left of the VS Code display.
+Next we are going to install the Live Server Extension in VS Code. The extensions panel is 5 steps down on the left of the VS Code display.
 <img width="800" alt="Contract address" src="https://github.com/ca-carr/smart_contracts/assets/5767854/d3f1f93f-47f6-43cd-993c-0babac9f87a1">
 
 Select to install it, and once it is installed we will navigate to our seminar3 folder in VS Code, then right click on connect.html and select Open With Live Server.
@@ -230,18 +230,17 @@ We can also disconnect to the webiste from MetaMask itself. This is somehting we
 4. Try sending your tokens to another address (it can be your friends address)
 
 ----
- ## Next steps
-  Now we may want to list this token somewhere, or make it available for others to use. How can we do this? Take a look for services that allow you to list your testnet token.
+ ## Next steps (Seminar 3.1 to 3.9)
+ Congratulations, we have a working token deployed on a real live network. In the next seminar we will try to add functionality and make a working website where you can build and interact with this smart contract from anywhere.
 
 
-## Additional items for the ERC-20 token
+## Additional items for the ERC-20 token (once you have completed the above)
 
-1) First, import your token from the contract address that created your token. What steps do you need to do to achieve this?
+1) First, import your token from the contract address that created your token. What steps do you need to do to achieve this? Can you view it in MetaMask? 
 2) Send your token to a member of your group
 3) Update your front-end html page to include the other functions your contract has, such as sending to another address. You can use remix to find the other functions that you can call
 
-# NFT contract
-Look up Seminar 3.1, where there is a guide to get started on creating an NFT and putting it on the metamask blockchain
+
 
 
 
