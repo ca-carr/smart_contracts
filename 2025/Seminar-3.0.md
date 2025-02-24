@@ -28,15 +28,13 @@ In our Brave browser we need to:
 - Connect to that network
 
 For example, if we want to use Holesky we will find the chain ID and the servers here:
-<img width="1126" alt="image" src="https://github.com/user-attachments/assets/49605a1b-eb52-426e-92ac-214e6062f772" />
+<img width="800" alt="image" src="https://github.com/user-attachments/assets/49605a1b-eb52-426e-92ac-214e6062f772" />
 
-
-
-Now we need to sign up to the website Alchemy to get some testnet coins, which we will use later.
-To get the coins: 
-- https://www.alchemy.com/faucets/polygon-mumbai
-- Sign up to alchemy if you need to
-- Insert your address and select 'send me MATIC'
+Now we need to get some testnet tokens coins from a faucet, which we will use later.
+To get the coins we can:
+- Try the website alchemy: https://www.alchemy.com/faucets/ (this used to work a lot more smoothly but alchemy has become more rigid in its offer).
+- Try google if we have an account.
+- Ask a colleague to send you testnet tokens.
 
 Once this is all done we can open Remix in our brave browser and open a contract file. 
 - In the contract foler we are going to make a new solidity smart contract for a ERC-20 token. This allows us to create our own tokens!
@@ -69,20 +67,20 @@ contract BEEMERS is ERC20, Ownable, ERC20Permit {
 ```
 
 ## Step 2
-We are now going to deply the contract on the Polygon testnet network.
-First we are importning the code, then we are going to Compile and run the script as before.
+We are now going to deply the contract on our chosen testnet network.
+First we are importning the code, then we are going to compile and run the script as before.
 
 To do this, we go to the deployment section
 <ol>
     <li> Select Deploy   </li>
     <li> Select Injected Provider - MetaMask (you may have to authorise MetaMask) </li>
     <li> Select the one account that you should have </li>
-    <li> Make sure that the account you have is in the deploy section, and hit deploy (again you may have to authorise MetaMask) </li>
+    <li> Make sure that the account you have is in the deploy section, and hit deploy (again you may have to authorise MetaMask to continue) </li>
 </ol>
 The steps correspond to the image
 <img width="800" alt="Screenshot 2024-02-16 160643" src="https://github.com/ca-carr/smart_contracts/assets/5767854/935f59ce-89a5-4cbe-bc72-4747747af803">
 
-In a few seconds you should get a confirmation that your smart contract has been deployed on the network, huzzah!
+In a few seconds you should get a confirmation that your smart contract has been deployed on the network, huzzah! 
 
 Now before we stop here, it is important that we note down a couple of things that we will need for the next step. The first is the contract address. In the example here it is $0x28520f1196b15bbc66278c0c2ec5c2dc99da2975$, and we will need the contract ABI, which is very long, but starts like:
 
@@ -120,7 +118,8 @@ Save both to a .txt file, called contract_address.txt and contract_abi.txt on yo
 ## Step 3
 Fresh from your success of steps 1 and 2, we are now going to find out how we can interact with these testnet smart contracts.
 
-First we need to install Visual Studio Code (VS code), linke here: https://code.visualstudio.com/download
+First we need to install Visual Studio Code (VS code), linke here: https://code.visualstudio.com/download.
+Alternatively we can start a codespace on Github, if you are more comfortable with that.
 
 Once installed we will open it, and navigate to our local directory we created called seminar3. 
 It should look something like the image below.
