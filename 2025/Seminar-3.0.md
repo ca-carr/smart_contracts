@@ -1,21 +1,20 @@
-# Seminar 3 (released on 20/02/2024)
+# Seminar 3.0 (released on 24/02/2025)
 This is the third seminar for the Smart Contract module.
 - To complete this seminar, you may need to consult the lecture material and the related reading. 
-- You are expected to be able to complete it on your own, though you may work with your group.
+- You are expected to work in your group, but you should be able to complete it on your own.
 - Aspects of the work we will do in this seminar are related to the exam assessment, like all seminars.
-- Don't be afraid to ask for help!
+- Ask for help if you are stuck. You can always ask others.
 
 ---
-
 
 # Deploying smart contracts
 
 ## Step 1, the tools: Solidity, Remix, MetaMask, Alchemy and OpenZeppelin
 
-First download a clean browser. We reccomend downloading the Brave browser https://brave.com/ 
-then loading up Brave, you can install MetaMask.
+First download a _clean_ browser. We reccomend downloading and installing the Brave browser https://brave.com/ .
+Once installed you can open it and install the MetaMask extension: https://metamask.io/ .
 
-It is important that you do not use a MetaMask that you use for real. This is only for the test.
+**It is important that you do not use a MetaMask that you use for real. This is only for demonstration purposes and we can unistall this MetaMask and Brave browser after the end of the module.**
 
 Now you should have something that looks like:
 <img width="800" alt="Screenshot 2024-02-16 154007" src="https://github.com/ca-carr/smart_contracts/assets/5767854/32c11f5d-6231-4d0e-88e4-246ae5cdb90a">
