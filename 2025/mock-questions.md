@@ -2,10 +2,23 @@
 
 Mock Exam Questions
 A.
-Q1: Explain what a smart contract is and how it differs from a wallet address in the Ethereum blockchain system.
-5 marks
 
-Q2: Identify the digital signatures in 
+A.1: Explain what a smart contract is and how it differs from a wallet address in the Ethereum blockchain system.
+(5 marks)
+
+
+A.2: Identify and explain how digital signatures are used in Ethereum when interacting with a smart contract.  
+Your answer must at least cover the following points:
+
+- How the transaction creator can identify what smart contract they intend to interact with
+- The relationship between a private key and the digital signature on a transaction
+- How the digital signature is created
+- How anyone can verify the digital signature on the transaction
+- A labelled diagram showing: the Private Key, the Smart Contract, the Signature Function, the Verification Function
+
+**(10 marks)**
+A.3 
+
 
 
 B. 
