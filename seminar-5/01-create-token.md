@@ -27,7 +27,7 @@ We can then paste the code we are given into SCT161.sol, it should look like the
 ```js
 // SPDX-License-Identifier: MIT
 // Compatible with OpenZeppelin Contracts ^5.0.0
-pragma solidity ^0.8.27;
+pragma solidity ^0.8.26;
 
 import {ERC1363} from "@openzeppelin/contracts/token/ERC20/extensions/ERC1363.sol";
 import {ERC20} from "@openzeppelin/contracts/token/ERC20/ERC20.sol";
@@ -85,9 +85,10 @@ The contract also mints the total supply to the contract deployer and uses 18 de
 - Go to the **Deploy & Run** Transactions tab
 - Select Injected Provider - MetaMask (this will connect MetaMask, and your account)
 - Ensure you’re on a testnet like Sepolia, or the mainnet Ethereum
-- Under **Deploy**, enter the total supply you wish to mint, we will pick 1000
+- Under **Deploy** enter the address of your connected wallet
 - Click **Deploy** and then confirm all in MetaMask
 - You will see the contract is deployed with a contract address, we will need this
+- We will also need to mint our token, which we will do in the dropdown menu, and select the total supply you wish to mint, we will pick 1000000 (1,000,000 or 1 million)
 
 ## Step 5: Check and Test the Token
 - After deployment, copy your contract address

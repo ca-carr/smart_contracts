@@ -111,4 +111,3 @@ Step	What You Did
 3️⃣	Listed token on Uniswap and provided liquidity
 You’ve built a fully open token economy, end-to-end.
 
-Would you like a README.md to tie the whole repo together, or should we create a landing page for the whole guide (maybe hosted at cacarr.com/blockchainguide)?
