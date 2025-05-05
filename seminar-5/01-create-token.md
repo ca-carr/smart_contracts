@@ -1,24 +1,24 @@
 # Objective
 By the end of this tutorial, you will have:
 
-- Create an ERC-20 token
-- Deployed it to an Ethereum-compatible network (e.g., Sepolia Testnet)
-- Verified it works with MetaMask
+- Created an up to date ERC-20 token
+- Deployed it to an Ethereum-compatible network (e.g., Mainnet Ethereum or Sepolia Testnet)
+- Verified it works with MetaMask and appears on Etherscan
 
-## 🧰 Tools Needed
+## Tools Needed
 
 - MetaMask (browser extension)
 - Remix IDE
 - Test ETH (Sepolia Testnet)
 - OpenZeppelin Contracts
 
-## 🛠️ Step 1: Setting Up Remix
+## Step 1: Setting Up Remix
 
 - Open Remix (https://remix.ethereum.org)
 - On the left panel, click on the File Explorers tab
 - Create a new file: SCT161.sol
 
-## 📜 Step 2: Write the Token Contract
+## Step 2: Write the Token Contract
 
 We will be using the OpenZeppelin wizard for the next bit (https://wizard.openzeppelin.com/) for the next bit, selecting Mintable, Burnable, Pausable, Callback and Permit. 
 
@@ -89,23 +89,18 @@ The contract also mints the total supply to the contract deployer and uses 18 de
 - Click **Deploy** and then confirm all in MetaMask
 - You will see the contract is deployed with a contract address, we will need this
 
-## 🧪 Step 5: Test the Token
+## Step 5: Check and Test the Token
 - After deployment, copy your contract address
-- Also find the contract ABI and Bytecode
-In MetaMask, click **Import Tokens**
+- Also find the contract ABI and Bytecode, which we will store for later use
+- In MetaMask, click **Import Tokens**
+- Paste your contract address
+- You should now see your token balance in the address you deployed with
+- We can also look up the contract address on Sepolia Etherscan (https://sepolia.etherscan.io/) or regular Etherscan (https://etherscan.io/)
 
-Paste your contract address
+## Summary
 
-You should now see your token balance
-
-## ✅ Summary
-You now have a working ERC-20 token deployed on a testnet! Here's what you’ve done:
-
-Written a compliant token contract
-
-Used OpenZeppelin for security and standards
-
-Deployed via MetaMask and Remix
-
-Verified token visibility in MetaMask
+- You now have a working ERC-20 token deployed on a testnet or mainnet
+- Used OpenZeppelin for security and standards
+- Deployed via MetaMask and Remix
+- Verified the token works as expected and appears on an explorer
 
