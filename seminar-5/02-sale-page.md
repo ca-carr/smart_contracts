@@ -1,20 +1,16 @@
-🎯 Objective
+# Objective
 You will:
 
-Deploy a minimal TokenSale smart contract that sells your ERC-20 token for ETH
+- Deploy a minimal TokenSale smart contract that sells your ERC-20 token for ETH
+- Create a GitHub Pages-hosted sale page where users can connect their wallet and buy tokens
+- Connect your frontend to the smart contract using **Ethers.js**
 
-Create a GitHub Pages-hosted sale page where users can connect their wallet and buy tokens
-
-Connect your frontend to the smart contract using Ethers.js
-
-🧱 Step 1: TokenSale Smart Contract
-Create a new file in Remix: TokenSale.sol
+## Step 1: TokenSale Smart Contract
+Create a new contract file in Remix: SCTSale.sol
 
 ```solidity
-Copy
-Edit
 // SPDX-License-Identifier: MIT
-pragma solidity ^0.8.20;
+pragma solidity ^0.8.26;
 
 import "@openzeppelin/contracts/access/Ownable.sol";
 import "@openzeppelin/contracts/token/ERC20/IERC20.sol";

@@ -22,7 +22,7 @@ By the end of this tutorial, you will have:
 
 We will be using the OpenZeppelin wizard for the next bit (https://wizard.openzeppelin.com/) for the next bit, selecting Mintable, Burnable, Pausable, Callback and Permit. 
 
-We can then paste the code we are given into SCT161.sol, it should look like the following:
+We can then paste the code we are given into SCT161.sol, it should look like the following *(note: we have altered the mint function from that given by openzeppelin, why?*):
 
 ```js
 // SPDX-License-Identifier: MIT
@@ -52,7 +52,7 @@ contract SCT161 is ERC20, ERC20Burnable, ERC20Pausable, Ownable, ERC1363, ERC20P
     }
 
     function mint(address to, uint256 amount) public onlyOwner {
-        _mint(to, amount);
+        _mint(to, amount * 10 ** decimals());
     }
 
     // The following functions are overrides required by Solidity.
@@ -91,8 +91,8 @@ The contract also mints the total supply to the contract deployer and uses 18 de
 - We will also need to mint our token, which we will do in the dropdown menu, and select the total supply you wish to mint, we will pick 1000000 (1,000,000 or 1 million)
 
 ## Step 5: Check and Test the Token
-- After deployment, copy your contract address
-- Also find the contract ABI and Bytecode, which we will store for later use
+- After deployment, copy your contract address and save it in a file called `contract_address.txt` like in our example.
+- Also find the contract ABI and Bytecode, which we will store for later use. Save them in the same directory under `abi.json` and `bytecode.txt`. There are examples given here. 
 - In MetaMask, click **Import Tokens**
 - Paste your contract address
 - You should now see your token balance in the address you deployed with
