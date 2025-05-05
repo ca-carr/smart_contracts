@@ -8,21 +8,22 @@ You will:
 ## Step 1: TokenSale Smart Contract
 Create a new contract file in Remix: SCTSale.sol
 
-```solidity
+```js
 // SPDX-License-Identifier: MIT
-pragma solidity ^0.8.26;
+pragma solidity ^0.8.20;
 
 import "@openzeppelin/contracts/access/Ownable.sol";
 import "@openzeppelin/contracts/token/ERC20/IERC20.sol";
 
-contract TokenSale is Ownable {
+contract STCSale is Ownable {
     IERC20 public token;
-    uint256 public rate; // tokens per ETH
+    uint256 public rate;
 
-    constructor(IERC20 _token, uint256 _rate) {
-        token = _token;
-        rate = _rate;
+    constructor(address _token, uint256 _rate) Ownable(msg.sender) {
+    token = IERC20(_token);
+    rate = _rate;
     }
+
 
     receive() external payable {
         buyTokens();
@@ -31,7 +32,7 @@ contract TokenSale is Ownable {
     function buyTokens() public payable {
         uint256 tokenAmount = msg.value * rate;
         require(token.balanceOf(address(this)) >= tokenAmount, "Not enough tokens");
-        token.transfer(msg.sender, tokenAmount);
+        require(token.transfer(msg.sender, tokenAmount), "Transfer failed");
     }
 
     function withdraw() public onlyOwner {
@@ -42,15 +43,15 @@ contract TokenSale is Ownable {
         token.transfer(owner(), token.balanceOf(address(this)));
     }
 }
+
 ```
 
 🧠 This contract:
 
-Accepts ETH
-
-Sends tokens at a fixed rate
-
-Allows the owner to withdraw ETH or remaining tokens
+- Needs to be loaded with the token
+- Accepts ETH
+- You can then BuyTokens at a fixed rate
+- Allows the owner to withdraw ETH or the remaining tokens
 
 ✅ Deployment
 Compile the contract in Remix
@@ -61,7 +62,7 @@ _token = your ERC-20 token address
 
 _rate = tokens per ETH (e.g. 1000)
 
-Transfer tokens to this contract for selling
+Transfer tokens to this contract address for selling
 
 🌐 Step 2: Create the Sale Page
 Create a folder called frontend/ and add the following files.
