@@ -1,7 +1,7 @@
 # Objective
 By the end of this tutorial, you will have:
 
-- Created a basic ERC-20 token
+- Create an ERC-20 token
 - Deployed it to an Ethereum-compatible network (e.g., Sepolia Testnet)
 - Verified it works with MetaMask
 
@@ -9,20 +9,20 @@ By the end of this tutorial, you will have:
 
 - MetaMask (browser extension)
 - Remix IDE
-- Test ETH (from a faucet, for deployment)
+- Test ETH (Sepolia Testnet)
 - OpenZeppelin Contracts
 
 ## 🛠️ Step 1: Setting Up Remix
 
-- Open Remix
-- On the left panel, click the “File Explorers” tab
-- Create a new file: MyToken.sol
-
-## Using OpenZepplin
-
+- Open Remix (https://remix.ethereum.org)
+- On the left panel, click on the File Explorers tab
+- Create a new file: SCT161.sol
 
 ## 📜 Step 2: Write the Token Contract
-Paste the following code into MyToken.sol:
+
+We will be using the OpenZeppelin wizard for the next bit (https://wizard.openzeppelin.com/) for the next bit, selecting Mintable, Burnable, Pausable, Callback and Permit. 
+
+We can then paste the code we are given into SCT161.sol, it should look like the following:
 
 ```js
 // SPDX-License-Identifier: MIT
@@ -66,38 +66,35 @@ contract SCT161 is ERC20, ERC20Burnable, ERC20Pausable, Ownable, ERC1363, ERC20P
 }
 ```
 
-## 🧠 This contract:
+## This contract:
 
-Uses OpenZeppelin’s ERC20 and Ownable libraries
+Uses OpenZeppelin’s libraries, including ERC20, ERC20Burnable, ERC20Pausable, Ownable, ERC1363, ERC20Permit
 
-Mints the total supply to the contract deployer
+The contract also mints the total supply to the contract deployer and uses 18 decimals (which is standard for ERC-20)
 
-Uses 18 decimals (standard for ERC-20)
+### Question: *what does ERC1363 do?*
 
-### 🔌 Step 3: Compile the Contract
-Go to the Solidity Compiler tab in Remix
 
-Make sure version is 0.8.20 or higher
 
-Click Compile MyToken.sol
+## Step 3: Compile the Contract
+- Go to the Solidity Compiler tab in Remix
+- Ensure you are using version 0.8.20 or higher
+- Click Compile SCT161.sol
 
-🚀 Step 4: Deploy the Contract
-Go to the Deploy & Run Transactions tab
+## Step 4: Deploy the Contract
+- Go to the **Deploy & Run** Transactions tab
+- Select Injected Provider - MetaMask (this will connect MetaMask, and your account)
+- Ensure you’re on a testnet like Sepolia, or the mainnet Ethereum
+- Under **Deploy**, enter the total supply you wish to mint, we will pick 1000
+- Click **Deploy** and then confirm all in MetaMask
+- You will see the contract is deployed with a contract address, we will need this
 
-Select Injected Provider - MetaMask (it will connect Remix to MetaMask)
+## 🧪 Step 5: Test the Token
+- After deployment, copy your contract address
+- Also find the contract ABI and Bytecode
+In MetaMask, click **Import Tokens**
 
-Make sure you’re on a testnet like Sepolia
-
-Under “Deploy”, enter your total supply (e.g., 1000000)
-
-Click Deploy and confirm in MetaMask
-
-🧪 Step 5: Test the Token
-After deployment, copy your contract address
-
-In MetaMask, click “Import Tokens”
-
-Paste the contract address
+Paste your contract address
 
 You should now see your token balance
 
