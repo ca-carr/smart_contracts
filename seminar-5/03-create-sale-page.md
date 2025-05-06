@@ -4,16 +4,15 @@
 
 - Connect your frontend to the smart contract using **Ethers.js**
 
+***Exercise***: Since we have done this before in previous seminars, we will not go over it again. Below are some helpful snippets html and js that you can use for connecting to your token sale.
 
+## Create the Sale Page
 
-🌐 Step 2: Create the Sale Page
 Create a folder called frontend/ and add the following files.
 
-📝 index.html
+### index.html
+
 ```html
-html
-Copy
-Edit
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -32,14 +31,12 @@ Edit
 </body>
 </html>
 ```
-🧠 app.js
 
+### app.js
 ```js
-js
-Copy
-Edit
-const saleAddress = "YOUR_SALE_CONTRACT_ADDRESS";
-const saleAbi = [ // Minimal ABI
+
+const saleAddress = "YOUR_SALE_CONTRACT_ADDRESS"; // Your sale contracts address
+const saleAbi = [ // Your sale contract's ABI
   "function buyTokens() payable",
   "function rate() view returns (uint256)"
 ];
@@ -66,17 +63,18 @@ async function buyTokens() {
 }
 ```
 
-🚀 Step 3: Deploy to GitHub Pages
+## Deploy to GitHub Pages
 
 - Create a GitHub repository (e.g. token-sale-site)
-- Push your frontend/ files
-- Enable GitHub Pages:
-- Go to repo → Settings → Pages
+- Push your frontend files
+- Enable GitHub Pages
+- Go to `repo → Settings → Pages`
 - Source: main, folder: / (root)
 
 After a few minutes, your site will be live!
 
-🔗 Example
+### Example
+
 If your GitHub username is alice, and repo is token-sale-site, the site will be at:
 
 ```arduino
