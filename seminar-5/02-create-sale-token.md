@@ -76,12 +76,85 @@ constructor(address _token, uint256 _rate) Ownable(msg.sender) {
 - Write down this new smart contract address
 - Transfer tokens to this contract address to make them available for selling
 
+## Buying Tokens
 
-✅ Summary
-You now have:
+Now that we have a sale smart contract, we should be able to buy the token just by sending it some ETH (or Sepolia ETH). 
 
-A contract that sells your ERC-20 token for ETH
+- Make sure your contract has some tokens in it, we can do this by:
+    - Minting tokens to the address or
+    - Sending tokens from our first address
+- Select another account that has some ETH, and create a transaction to the smart contract sale address. It should autcomatically return a token.
 
-A web interface to buy tokens
+## Improving Our Sale Smart Contract
+***Exercise:*** Think about how you could improve the sale smart contract.
 
-A GitHub-hosted frontend anyone can access
+- What might you like to add in?
+- How would you like to improve it?
+- Could you reduce deployment gas cost?
+- Could you reduce gas cost for operating on the smart contract?
+- What functions would you like to see?
+
+Below is an example of improvements or changes to the smart contract you may wish to implement or deploy.
+
+```js
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.20;
+
+import "@openzeppelin/contracts/access/Ownable.sol";
+import "@openzeppelin/contracts/token/ERC20/IERC20.sol";
+
+contract STCSale is Ownable {
+    IERC20 public immutable token;
+    uint256 public rate;
+    bool public available = true;
+
+    constructor(address _token, uint256 _rate) Ownable(msg.sender) {
+        token = IERC20(_token);
+        rate = _rate;
+    }
+
+    receive() external payable {
+        buyTokens();
+    }
+
+    function buyTokens() public payable {
+        require(available, "Token buying is disabled");
+        uint256 tokenAmount = msg.value * rate;
+        require(token.balanceOf(address(this)) >= tokenAmount, "Not enough tokens");
+        require(token.transfer(msg.sender, tokenAmount), "Transfer failed");
+    }
+
+    function withdrawETH() external onlyOwner {
+        payable(owner()).transfer(address(this).balance);
+    }
+
+    function withdrawUnsoldTokens() external onlyOwner {
+        token.transfer(owner(), token.balanceOf(address(this)));
+    }
+
+    function makeTokensAvailable(bool _available) public onlyOwner {
+        available = _available; 
+        // true -> allow buyers to buy tokens // false -> stop buyers from buying tokens
+    }
+
+    function  tokensAvailable() public view returns(uint256) {
+        return(token.balanceOf(address(this)));
+    }
+
+    function  tokensAvailableToBuy() public view returns(bool) {
+        return(available);
+    }
+
+        event RateChanged(uint256 oldRate, uint256 newRate);
+
+    function changeRate(uint256 _rate) external onlyOwner {
+        emit RateChanged(rate, _rate);
+        rate = _rate;
+    }
+}
+```
+
+## Next
+
+- In [Part 3](03-create-sale-page.md) you will construct a front end to sell the token and interact with your smart contract.
+- In [Part 4](04-listing-on-uniswap) you will list the token on [Uniswap](https://app.uniswap.org/).
