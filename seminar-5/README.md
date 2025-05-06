@@ -1,13 +1,12 @@
-📄 README.md
-markdown
-Copy
-Edit
-# 🚀 ERC-20 Token Launch Guide
+# 📄 README.md
 
-This guide walks you through the complete lifecycle of launching an ERC-20 token:
+## ERC-20 Token Launch Tutorial
 
-1. **Create and deploy** an ERC-20 token
-2. **Launch a private sale** using a simple web interface hosted on GitHub Pages
+This tutorial demonstrates how to deploy and launch an ERC20 token over the four steps.
+
+1. **Create and deploy** an ERC-20 token using OpenZeppelin tools
+2. **Launch a private sale** create a Token Sale contract
+3. **Create a sale frontend** using github to allow the sale of the token from step 1
 3. **List the token on Uniswap** to enable public trading via a decentralized exchange
 
 ---
@@ -46,10 +45,10 @@ A deeper dive into Uniswap v3’s liquidity model, including full range vs conce
 
 ## 💡 Tips and Best Practices
 
-- Use **Sepolia** or **Goerli** for test deployments.
-- Use [MetaMask](https://metamask.io) for signing transactions.
-- Use [Remix](https://remix.ethereum.org) for compiling/deploying contracts easily.
-- Use [Etherscan](https://sepolia.etherscan.io) to view deployed contracts and test transactions.
+- We use **Sepolia** for test deployments
+- We use [MetaMask](https://metamask.io) as our wallet
+- We use [Remix](https://remix.ethereum.org) for creating, compiling and deploying our contracts
+- We use [Sepolia Etherscan](https://sepolia.etherscan.io) to view deployed contracts and test transactions.
 - Use [Uniswap Interface](https://app.uniswap.org) to add liquidity manually.
 
 ---
@@ -58,8 +57,4 @@ A deeper dive into Uniswap v3’s liquidity model, including full range vs conce
 
 This guide is intended as an educational template. If you have improvements or want to use it in your own course or project, feel free to fork it or submit issues.
 
----
 
-## 📜 License
-
-MIT License — free to use, adapt, or remix for your own launches.
