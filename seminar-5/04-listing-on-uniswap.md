@@ -1,62 +1,55 @@
 # Objective
-In this tutorial, you will:
 
-- Add a liquidity pool on Uniswap (e.g., MTK/ETH)
-- Enable public trading of your token
+In this final step we will:
+
+- Add a liquidity pool on Uniswap (e.g., SCT161/ETH)
+- Enable public trading of your token on uniswap
 - Learn what affects the price and how liquidity works
 
 ## What You Need
+
 Before starting, ensure you have:
 
-- An ERC-20 token deployed (from 01-)
-- Tokens in your wallet (you minted them to yourself)
-- Some ETH in the same wallet
+- An ERC-20 token deployed (from [Part 1](01-create-erc20.md))
+- Tokens in your wallet (minted to one of your addresses)
+- Some ETH (or Sepolia ETH) in the same wallet
 
-- You should also have completed the private sale (Step 2), or reserved some tokens for this liquidity pool.
+## Choose Your Pool Size
 
-## Step 1: Choose Your Pool Size
-You must add equal value of each token.
-Example:
+You must add equal value of each token, for example:
 
-You want to pair 1 ETH and 10,000 MTK
+- You want to pair 1 ETH and 1000 SCT161
+- Implied price: 1 ETH = 1000 STC161 or 1 STC161 = 0.001 ETH
+- This becomes your starting market price on Uniswap.
 
-Implied price: 1 ETH = 10,000 MTK or 1 MTK = 0.0001 ETH
+## Add Liquidity on Uniswap
 
-This becomes your starting market price on Uniswap.
+Go to [Uniswap Sepolia](https://app.uniswap.org/explore/tokens/ethereum_sepolia/0x1f9840a85d5af5bf1d1762f925bdaddc4201f984) (if using Sepolia).
 
-## Step 2: Add Liquidity on Uniswap
-
-Go to https://app.uniswap.org
-
-Connect your MetaMask wallet
-
-Click Pool → New Position
-
-Choose token pair:
-
-Token A: ETH
-
-Token B: paste your MTK contract address
+- Connect your MetaMask wallet
+- Click Pool → New Position
+- Choose token pair:
+    - Token A: ETH
+    - Token B: paste your STC161 contract address
 
 Set price range:
 
-Choose “Full Range” for simplicity (covers all price movement)
+- Choose “Full Range” for simplicity (covers all price movement)
+- Enter amounts to deposit (e.g., 1 ETH and 1,000 STC161)
+- Approve the token spend (MetaMask will prompt you)
 
-Enter amounts to deposit (e.g., 1 ETH and 10,000 MTK)
+Click **Add Liquidity**
 
-Approve the token spend (MetaMask will prompt you)
+> Note: Uniswap v3 uses concentrated liquidity, so providing liquidity across the full range makes it simple but spreads your capital thin. Advanced LPs may choose a narrower range around expected price. 
 
-Click Add Liquidity
+## Share Your Trading Link
 
-💡 Tip: Uniswap v3 uses concentrated liquidity, so providing liquidity across the full range makes it simple but spreads your capital thin. Advanced LPs may choose a narrower range around expected price.
+- Once the pool is live, users can:
+- Buy or sell STC161 via the Uniswap Swap page
+- Just paste your token address into the interface
 
-🔗 Step 3: Share Your Trading Link
-Once the pool is live, users can:
 
-Buy or sell MTK via the Uniswap Swap page
-
-Just paste your token address into the interface
-
+<!--
 To share:
 
 Format the link like this:
@@ -105,3 +98,4 @@ Step	What You Did
 3️⃣	Listed token on Uniswap and provided liquidity
 You’ve built a fully open token economy, end-to-end.
 
+-->
