@@ -1,17 +1,14 @@
-📄 03-uniswap-listing.md — Listing Your Token on Uniswap
-🎯 Objective
+# Objective
 In this tutorial, you will:
 
-Add a liquidity pool on Uniswap (e.g., MTK/ETH)
+- Add a liquidity pool on Uniswap (e.g., MTK/ETH)
+- Enable public trading of your token
+- Learn what affects the price and how liquidity works
 
-Enable public trading of your token
-
-Learn what affects the price and how liquidity works
-
-🌐 What You Need
+## What You Need
 Before starting, ensure you have:
 
-An ERC-20 token deployed (from Step 1)
+- An ERC-20 token deployed (from 01-)
 
 Tokens in your wallet (you minted them to yourself)
 
