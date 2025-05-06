@@ -9,16 +9,12 @@ In this tutorial, you will:
 Before starting, ensure you have:
 
 - An ERC-20 token deployed (from 01-)
+- Tokens in your wallet (you minted them to yourself)
+- Some ETH in the same wallet
 
-Tokens in your wallet (you minted them to yourself)
+- You should also have completed the private sale (Step 2), or reserved some tokens for this liquidity pool.
 
-Some ETH in the same wallet
-
-Access to Uniswap
-
-You should also have completed the private sale (Step 2), or reserved some tokens for this liquidity pool.
-
-🧮 Step 1: Choose Your Pool Size
+## Step 1: Choose Your Pool Size
 You must add equal value of each token.
 Example:
 
@@ -28,7 +24,8 @@ Implied price: 1 ETH = 10,000 MTK or 1 MTK = 0.0001 ETH
 
 This becomes your starting market price on Uniswap.
 
-🔧 Step 2: Add Liquidity on Uniswap
+## Step 2: Add Liquidity on Uniswap
+
 Go to https://app.uniswap.org
 
 Connect your MetaMask wallet
