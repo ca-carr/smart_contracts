@@ -83,8 +83,9 @@ npm init -y
 3. 
 ```
 npm install --save-dev hardhat
-npx hardhat
+npx hardhat --init
 ```
+Select hardhat-3, and to use all the defaults.
 
 - Select Create a JavaScript project
 - Accept the default options
