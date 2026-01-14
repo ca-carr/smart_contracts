@@ -4,7 +4,7 @@
 | Module Title:  | Smart Contracts | 
 | Module code:   | BEEM161 | 
 | Module level:	 | M |
-| Academic years: | 2022/23, 2023/24, 2024/25 |
+| Academic years: | 2022/23, 2023/24, 2024/25, 2025/26 |
 | Module leader:	| Dr Christopher Carr|
 | Module credit: |	15 |
 | ECTS value:	| 7.5 |
@@ -23,8 +23,8 @@ The module builds from a focus on blockchain and cryptocurrency foundations, to 
 The overarching objective is to provide a fundamental understanding of smart contracts and their associated technologies, as well as practical experience with design and development. The goals of this module are:
 
 1. To instil and develop a greater comprehension of blockchain technologies;
-2. to give experience with smart contract development;
-3. to create awareness of the broader uses and issues of these technologies.
+2. to give deep experience with smart contract development;
+3. to create awareness of the broader uses, challenges and issues of these technologies.
 
 ## Intended Learning Outcomes (ILOs)
 
@@ -47,18 +47,20 @@ The overarching objective is to provide a fundamental understanding of smart con
 
 ## Teaching and learning
 
-There is 21 hours total of contact time, and 129 hours of independent learning. \
+There are at least 19 hours total of contact time, and 131 hours of independent learning. \
 The contact hours are split as follows: 
-- 11 hours of lectures; a 1 hour lecture each week, except for reading week
-- 10 hours of tutorials; a 2 hour tutorial every other week
+- 11 hours of lectures; a 1 hour lecture each week, except for reading week (week 6)
+- 8 hours of tutorials; a 2 hour tutorial every other week (weeks 2, 4, 8, 10)
 
-For the 129 independent study hours, you are expected to complete the homework **TASKS** set in lectures and tutorials, in addition to the time you should set aside for exam revision and group project work. 
+For the 131 independent study hours, you are expected to complete the homework **TASKS** set in lectures and tutorials, in addition to the time you should set aside for exam revision and group project work. 
+
+There are also additional hours set aside for help classes and extra lab time later in the module. You are encouraged to use this as much as you like.
 
 ## Guest lectures
-This module will have guest lectures, both in person and online. In the event that a lecture is online, information will be provided in advance. Guest lectures are announced on the <a href="https://vle.exeter.ac.uk/course/view.php?id=14438" >Timetable accesable via ELE. </a>
+This module will have guest lectures, both in person and online. In the event that a lecture is online, information will be provided in advance. Guest lectures are announced on the ELE page.
 	
 ## Online provision
-The module is run on a face-to-face basis, and there is **no available provision** for online learners. However, in order to make it as easy for the students as possible, lecture slides, and recordings are made available online after the lecture. Material for the tutorial is also available, however tutorials are not recorded for student privacy reasons.
+The module is run on a face-to-face basis, and there is **no available provision** for online learners. However, in order to make it as easy for the students as possible, lecture slides, and recordings are made available online after the lecture. Material for the tutorial is also available, however tutorials are not recorded.
 
 There may be occasions where the tutorials or lectures are online, instead of in-person. In this case, you will be informed in advance. 
 	
@@ -69,10 +71,12 @@ There may be occasions where the tutorials or lectures are online, instead of in
 ## Lectures
 Lectures consist of a mix of lecture and note taking, questions and task to complete. They are interactive. Please bring your laptops to lectures, and ensure you sit close enough to hear and join in with the session.
 	
-## Tutorials
-After the first tutorial, all tutorials are in groups.
+## Tutorials /  Seminars / Labs
+All tutorials are completed in groups.
 Tutorials are hands on and practical, including designing, coding and creating smart contracts. They take the form of interactive exploration, explanation and task completion. Please ensure you bring your laptops to the session. 
 	
+> The words tutorial, seminar and lab to mean the same thing in this module. 
+
 ## Tools
 We will mostly be using REMIX-IDE, and online Integrated Development Environment, designed for the smart contract language Solidity. Solidity is used in Ethereum for creating smart contracts. We will be using other tools, such as AWS, Alchemy, Hardhat to name a few. These will be explained when we come to use them. 
 
@@ -84,10 +88,10 @@ The assessment, both formative and summative assesses all ILOs as described abov
 Participation in group and individual work in tutorials and lectures. Discussion and in class verbal feedback.
 
 ### Summative assessment
-- **70% exam**, with multiple choice questions and a written component
-- **30% group work project**, focusing on building a smart contract, deploying it, and explaining your smart contract in the presentation
+- **70% exam**, with multiple choice questions and a written component.
+- **30% group work project**, focusing on building a smart contract, deploying it, and explaining your smart contract in the presentation.
 
-Full assessment details are described in the assessment section <a href="/assessment_information.md"> here. </a>
+Full assessment details are described in the assessment section on ELE.
 
 
 # Syllabus overview, and material covered 
@@ -131,5 +135,6 @@ Full assessment details are described in the assessment section <a href="/assess
 
 ### Additional reading is made available
 - On the lecture slides, and
-- on these online course notes.
+- on these online course notes
+- and on ELE.
 
