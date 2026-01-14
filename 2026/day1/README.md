@@ -32,6 +32,25 @@ GitHub Codespaces is free for personal accounts, but it has monthly limits. To a
 >
 > *Usage beyond these limits will be billed to your personal account.*
 
-## 1. 
+## 1. Create Your Portfolio Site
+Before we build smart contracts, we need a place to showcase them. You will build a simple personal website to serve as your portfolio. Later in the course, you will link your decentralised applications (dApps) and group project here.
 
-You'll need your laptop to complete these steps.
+1. Open your portfolio directory.
+```bash
+cd /workspaces/smart_contracts/2026/portfolio/
+```
+
+2. Make sure our development environment is up to date.
+```bash
+sudo apt-get update
+sudo apt-get upgrade
+```
+Press `y` when prompted.
+
+3. Run a local web server on port 8000
+```bash
+python3 -m http.server
+```
+> We are using python here, and you should be prompted to open the forwarded port. You can close the web server by pressing `ctl+c` or `cmd+c`
+
+4. **TASK:** Configure the website in `index.html` to have your name at the top, and a description of what you are doing today. 
