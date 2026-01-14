@@ -54,3 +54,69 @@ python3 -m http.server
 > We are using python here, and you should be prompted to open the forwarded port. You can close the web server by pressing `ctl+c` or `cmd+c`
 
 4. **TASK:** Configure the website in `index.html` to have your name at the top, and a description of what you are doing today. 
+
+
+## 2. Smart Contracts with Hardhat (ERC-20 Token)
+
+In this section, you will set up a **new Hardhat project** from scratch, create a simple ERC-20 token using modern tooling, and deploy it to a local Hardhat blockchain.
+
+---
+
+### 2.1 Create a New Project Directory
+
+Before installing Hardhat, create a dedicated directory for your smart contracts.
+
+1. From the `2026` directory, create and enter a new folder:
+```bash
+cd /workspaces/smart_contracts/2026/
+mkdir erc20
+cd erc20
+```
+
+2. Initialize a new Node.js project:
+```bash
+npm init -y
+```
+
+> This will create a package.json file to manage your project dependencies.
+
+3. 
+```
+npm install --save-dev hardhat
+npx hardhat
+```
+
+- Select Create a JavaScript project
+- Accept the default options
+- Install additional dependencies when prompted
+- After initialization, your directory should include:
+    - contracts/
+    - scripts/
+    - hardhat.config.js
+
+## 2.3 Create an ERC-20 Token Contract
+
+We will use OpenZeppelin, a widely used and audited smart contract library.
+
+Install OpenZeppelin contracts:
+
+```bash
+npm install @openzeppelin/contracts
+```
+
+```js
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.20;
+
+import "@openzeppelin/contracts/token/ERC20/ERC20.sol";
+
+contract MyToken is ERC20 {
+    constructor(uint256 initialSupply) ERC20("MyToken", "MTK") {
+        _mint(msg.sender, initialSupply);
+    }
+}
+```
+
+```bash
+npx hardhat node
+```
