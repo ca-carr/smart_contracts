@@ -80,7 +80,7 @@ npm init -y
 
 > This will create a package.json file to manage your project dependencies.
 
-3. 
+3. Install hardhat (for reference: https://hardhat.org/docs/tutorial/setup)
 ```
 npm install --save-dev hardhat
 npx hardhat --init
