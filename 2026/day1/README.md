@@ -35,3 +35,4 @@ GitHub Codespaces is free for personal accounts, but it has monthly limits. To a
 5. Once we have out codespace setup, now complete:
     - [part1.md](./part1.md)
     - [part2.md](./part2.md)
+    - [part3.md](./part3.md)
