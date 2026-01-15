@@ -36,3 +36,12 @@ GitHub Codespaces is free for personal accounts, but it has monthly limits. To a
     - [part1.md](./part1.md)
     - [part2.md](./part2.md)
     - [part3.md](./part3.md)
+
+6. Additional resources
+The below are some online guides and tools realted to smart contract development, web3 deployments and setting up a webpage.
+-  https://speedrunethereum.com/challenge/token-vendor
+- https://cryptozombies.io/en/course
+- https://snakecharmers.ethereum.org/a-developers-guide-to-ethereum-pt-3/
+- https://solidity-by-example.org/
+- https://www.ethtechtree.com/
+- https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-github-pages-site 
