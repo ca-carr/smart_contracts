@@ -1,148 +1,147 @@
-# DAY 1; Part 2;  ERC-20 Token in Remix
+## 2. Wallets, Browsers, and Testnet ETH Setup
 
-In this lab, you will create and deploy a **standard ERC-20 token** using **Remix IDE** (browser-based). You’ll deploy first to the **Remix VM** (a simulated chain that runs in your browser), then run simple on-chain interactions (mint check, transfers).
+In this section, you will set up a **clean browser environment**, install **crypto wallets**, and obtain **Ethereum testnet ETH**.
 
-> Remix runs entirely in the browser at https://remix.ethereum.org/ and requires no local setup.  
-> When you deploy using the **Remix VM**, the contract exists **only in your browser** (it is not on a public network).
 
----
+## 2.1 Install a Fresh Browser (Choose One)
 
-## Learning outcomes
+To avoid conflicts with existing extensions or cached wallets, **install a fresh browser** and use it only for this course. You can remove it later. 
 
-By the end you should be able to:
-- Write a minimal ERC-20 token using **OpenZeppelin Contracts**
-- Compile in Remix with the correct compiler version
-- Deploy to the **Remix VM**
-- Interact with your deployed contract (read balance, transfer)
+Choose **one** of the following (pick one you dont already have):
 
----
+- **Google Chrome**  
+  https://www.google.com/chrome/
 
-## 2. ERC-20 Token with Remix
+- **Mozilla Firefox**  
+  https://www.mozilla.org/firefox/
 
-### 2.1 Open Remix and Create a Workspace
+- **Brave Browser** (privacy-focused, Chromium-based)  
+  https://brave.com/download/
 
-**TASKS**
-1. Open Remix in your browser: https://remix.ethereum.org/.
-2. In the left sidebar, open the **File Explorer**.
-3. Create a new workspace (optional but recommended):
-   - Click the workspace dropdown → **Create** → name it `erc20-lab`.
+We will use this browser exclusively for blockchain development work.
 
----
 
-### 2.2 Create the Token Contract
 
-We’ll use **OpenZeppelin Contracts** (industry-standard implementations of token standards). citeturn2view2
+## 2.2 Install MetaMask (Ethereum Wallet)
 
-**TASKS**
-1. In the `contracts/` folder, create a new file named: `MyToken.sol`. citeturn2view0
-2. Paste this contract:
+**MetaMask** is a widely used Ethereum wallet. A wallet is required for interacting with Ethereum testnets, Remix and other tools.
 
-```solidity
-// SPDX-License-Identifier: MIT
-pragma solidity ^0.8.20;
+🔗 https://metamask.io/download/
 
-// Import OpenZeppelin ERC20 from a tagged release (stable version).
-import "https://github.com/OpenZeppelin/openzeppelin-contracts/blob/v5.4.0/contracts/token/ERC20/ERC20.sol";
 
-contract MyToken is ERC20 {
-    constructor(uint256 initialSupply) ERC20("MyToken", "MTK") {
-        _mint(msg.sender, initialSupply);
-    }
-}
-```
+1. Install MetaMask as a browser extension on your new browser.
+2. Create a **new wallet**.
+3. Securely store your **Secret Recovery Phrase** (do NOT share it). *why not?*
+4. Leave MetaMask set to its default settings for now.
 
-> Why this import?  
-> Using a **tagged release** avoids pulling “moving target” code from a branch. OpenZeppelin Contracts releases are documented as a reusable library for secure smart contract development. citeturn2view2turn1view1  
-> (The ERC-20 pattern shown here matches OpenZeppelin’s standard approach: inherit `ERC20`, set name/symbol, mint initial supply to deployer.) citeturn1view1
+> ⚠️ Never share your recovery phrase. Anyone with it can access and move your funds.
 
----
+Question. How does the recovery phrase work. How can it be used to access your wallet?
 
-### 2.3 Compile in Remix
 
-**TASKS**
-1. Click the **Solidity Compiler** tab (the “S” icon).
-2. Set **Compiler Version** to **0.8.20** (or higher 0.8.x).  
-   - This must match the `pragma solidity ^0.8.20;` line.
-3. Turn on **Auto compile** (recommended).
-4. Click **Compile MyToken.sol**.
-5. Confirm you see a **green checkmark** (successful compile).
 
----
+## 2.3 Install Phantom Wallet (Multi-Chain Wallet)
 
-### 2.4 Deploy to the Remix VM (Local Simulation)
+**Phantom** is a wallet that supports **Ethereum (EVM)**, **Solana**, and other chains. We can also use this wallet for the work on this course. 
 
-**TASKS**
-1. Click **Deploy & Run Transactions** (the Ethereum logo / “play” panel).
-2. In **Environment**, choose **Remix VM** (the simulated in-browser chain).
-3. Under **Contract**, select `MyToken`.
-4. In the deploy input field for `initialSupply`, enter an amount in “base units”:
-   - Example: `1000000000000000000000` (this represents **1000 tokens** with **18 decimals**)
-5. Click **Deploy**.
+🔗 https://phantom.app/download
 
-**CHECKPOINT**
-- Your contract should appear under **Deployed Contracts** with an address.
-- Remember: deployments on Remix VM exist only in your browser. citeturn1view3
 
----
+1. Install Phantom as a browser extension.
+2. Create a **new wallet**.
+3. Securely store the recovery phrase.
+4. Ensure **Ethereum** is enabled inside Phantom settings.
 
-### 2.5 Interact with Your Token (Core Tasks)
 
-Under **Deployed Contracts**, expand `MyToken`.
 
-**TASKS**
-1. **Read your balance**
-   - Find `balanceOf(address)`
-   - Paste your current account address (shown at the top of Deploy & Run)
-   - Click `balanceOf`
-   - Confirm you have the full initial supply
-2. **Transfer tokens to another account**
-   - In the account dropdown at the top, switch to a different Remix VM account and copy its address
-   - Switch back to the original deployer account
-   - Call `transfer(recipient, amount)`
-     - Example amount: `10000000000000000000` (10 tokens with 18 decimals)
-   - Verify the recipient received tokens with `balanceOf(recipient)`
+## 2.4 Switch MetaMask to an Ethereum Testnet
 
-**OPTIONAL TASK**
-3. Explore ERC-20 metadata
-   - Call `name()`, `symbol()`, `totalSupply()`
+We will use the Ethereum testnet **Sepolia**. There are other test networks, but at the current time of writing Sepolia is the easiest to manage.
 
----
+1. Open **MetaMask**.
+2. Click **Settings** → **Advanced**.
+3. Enable **Show test networks**.
+4. Return to the main MetaMask view.
+5. Open the network dropdown at the top.
+6. Select **Sepolia**.
 
-## Extension Tasks (Save for Later)
+If you do not find the RPC Server Address, you can use the one here: https://ethereum-sepolia-rpc.publicnode.com 
 
-These are **advanced tasks** that you will do after the Remix VM version works.
 
-### A. Deploy to a Public Testnet (Injected Provider)
+## 2.5 Get Testnet ETH (Sepolia)
 
-Remix can deploy through your wallet using **Injected Provider – MetaMask** (this connects Remix to MetaMask for real testnet transactions). citeturn2view1
+You need **Ethereum testnet ETH** to deploy contracts and send transactions.  
+Testnet ETH has **no real-world value** and is distributed for free via **faucets**.
 
-**TASKS (Later)**
-1. Install MetaMask and switch to an EVM testnet (commonly **Sepolia**).
-2. Get testnet ETH from a faucet (required to pay gas). citeturn2view0
-3. In Remix → **Deploy & Run** → set **Environment** to **Injected Provider – MetaMask**. citeturn2view1
-4. Deploy `MyToken` again with a sensible `initialSupply`.
-5. Record:
-   - Contract address
-   - Network name
-   - Deployer address
+> ⚠️ If you do not have any ETH (or testnet ETH in this case), we will not be able to make transactions or create smart contracts, thus this step is required.
 
-### B. Build a Webpage to Connect to Testnet
+### Step 1: Make Sure Sepolia Is Available in MetaMask
 
-**TASKS (Later)**
-1. Create a simple webpage that:
-   - Connects to MetaMask
-   - Reads `balanceOf()` for the connected wallet
-2. Add a “Transfer” form that calls `transfer()`.
+Sepolia is the current standard Ethereum test network, but it may not be visible by default. See the step above for changing to the test network.
 
----
+### Step 2: Copy Your Wallet Address
 
-## Deliverables
+1. Make sure MetaMask is set to **Sepolia**.
+2. Click your account name to copy your wallet address.
+3. Keep this address handy, you will paste it into a faucet.
 
-1. A deployed ERC-20 token on the Remix VM
-2. Evidence of:
-   - Your deployer balance
-   - One successful transfer to a second account
-3. A short write-up (2–4 sentences) describing:
-   - Token name/symbol
-   - Initial supply
-   - What you tested (balance + transfer)
+### Step 3: Get Sepolia ETH (Easiest First)
+
+#### ✅ Option A: Google Cloud Sepolia Faucet (Recommended & Easiest)
+
+🔗 **https://cloud.google.com/application/web3/faucet/ethereum/sepolia**
+
+- Sign in with a **Google account**
+- Paste your MetaMask address
+- Request Sepolia ETH
+
+This is currently the most reliable option and works well for our use case.
+
+#### Option B: Alchemy Sepolia Faucet
+
+🔗 https://sepoliafaucet.com/
+
+- Requires a GitHub or Alchemy login
+- Paste your MetaMask address
+- Request test ETH
+
+
+
+#### Option C: Infura Sepolia Faucet
+
+🔗 https://www.infura.io/faucet/sepolia
+
+
+
+#### Option D: QuickNode Faucet
+
+🔗 https://faucet.quicknode.com/ethereum/sepolia
+
+
+### Step 4: Share ETH With Your Classmates
+
+Once you have Sepolia ETH, you can share it by sending to another classmate. Alternatively you can send it to your own Phantom wallet address.
+
+1. Ask a classmate for their Sepolia wallet address.
+2. Send them a small amount (e.g. `0.002 ETH`).
+3. Confirm they receive it.
+
+Congratulations, you have made a real transaction that will remain on the testnet chain. You can look up that transaction using the transaction id on a testnet block explorer.
+
+## 2.6 Checkpoint
+
+You should now have:
+- A fresh new browser installed
+- MetaMask installed and set to **Sepolia**
+- Phantom installed
+- Testnet ETH in your MetaMask wallet
+
+You are now ready to:
+- Deploy contracts from Remix using **Injected Provider – MetaMask**
+- Connect wallets to web applications
+- Interact with the Ethereum testnet
+
+## 2.7 Next Steps
+
+Go to [part3.md](./part3.md) where we will start to deploy an ERC20 token.  
+
