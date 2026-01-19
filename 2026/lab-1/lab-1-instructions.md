@@ -126,3 +126,116 @@ git add .
 git commit -m "Update portfolio"
 git push
 ```
+
+## 9. Part 2: Connect Your ERC-20 Token to Your Web3 Frontend
+
+The following are things you may need to consider: 
+
+### Gather token details
+- Copy your deployed contract address and confirm the network (e.g., Sepolia).
+- Export the ABI (Remix compile artifacts) and save it in the repo, e.g. `./abi/ERC20.json`.
+
+### Add ethers to your frontend
+- Install for local dev: `npm install ethers` (or use a browser build and include `<script src="./path/to/ethers.min.js"></script>`).
+- Ensure your JS loads with relative paths so GitHub Pages serves it correctly.
+
+### Detect & connect a wallet in javsacript
+```js
+if (!window.ethereum) throw new Error('MetaMask not detected');
+const accounts = await window.ethereum.request({ method: 'eth_requestAccounts' });
+const userAddress = accounts[0];
+```
+- Show a persistent “Connect Wallet” button and store connected state.
+
+### Create provider and signer (using ethers v6 maybe)
+```js
+const provider = new ethers.BrowserProvider(window.ethereum);
+const signer = await provider.getSigner();
+```
+
+### Instantiate the contract
+```js
+const abi = await fetch('./abi/ERC20.json').then(r => r.json());
+const token = new ethers.Contract(tokenAddress, abi, signer /* or provider for readonly */);
+```
+
+### Read token data
+```js
+const [name, symbol, decimalsBN, totalSupplyBN] = await Promise.all([
+    token.name(),
+    token.symbol(),
+    token.decimals(),
+    token.totalSupply()
+]);
+const decimals = Number(decimalsBN);
+const totalSupply = ethers.formatUnits(totalSupplyBN, decimals);
+const balanceBN = await token.balanceOf(userAddress);
+const balance = ethers.formatUnits(balanceBN, decimals);
+```
+- Display name, symbol, decimals, totalSupply and user balance.
+
+### Write (transfer) with transaction status
+```js
+async function transferTokens(to, humanAmount) {
+    try {
+        const amount = ethers.parseUnits(humanAmount, decimals);
+        const tx = await token.transfer(to, amount); // signer required
+        showStatus('Pending', tx.hash);
+        const receipt = await tx.wait(); // waits for confirmation
+        showStatus('Confirmed', receipt.transactionHash);
+    } catch (err) {
+        showError(err);
+        showStatus('Failed');
+    }
+}
+```
+- Provide UI feedback for pending/confirmed/failed states.
+
+### Network safety checks
+```js
+const network = await provider.getNetwork();
+if (network.chainId !== EXPECTED_CHAIN_ID) {
+    // prompt user to switch networks (EIP-3326 / wallet request)
+}
+```
+- Prompt users to switch if chainId mismatches.
+
+### UX improvements
+- “Connect Wallet” / “Connected” states.
+- Truncate addresses for display (e.g., 0x1234…abcd).
+- Clear, user-friendly error messages (e.g., rejected signatures, insufficient funds).
+- Disable action buttons while transactions are pending.
+
+### Handle token amounts correctly
+- Convert user-facing amounts ↔ base units with decimals:
+    - To send: ethers.parseUnits(humanAmount, decimals)
+    - To display: ethers.formatUnits(bigIntAmount, decimals)
+
+### Event-driven updates
+```js
+token.on('Transfer', (from, to, value, event) => {
+    // refresh balances and UI when relevant transfer occurs
+});
+```
+- Use events to auto-refresh balances after transfers or approve changes.
+
+### Approve / allowance flow
+```js
+await token.approve(spender, ethers.parseUnits(amount, decimals));
+const allowanceBN = await token.allowance(owner, spender);
+const allowance = ethers.formatUnits(allowanceBN, decimals);
+```
+- Optionally demonstrate transferFrom using a spender account.
+
+### Persistence & reconnect
+- Save last connected address: `localStorage.setItem('lastAccount', address)`.
+- On page load, re-check and re-connect if the user previously connected.
+
+### GitHub Pages hardening
+- Use relative paths for ABI and assets (e.g., `./abi/ERC20.json`, `./js/app.js`) so URLs work under `https://username.github.io/repo/`.
+- Avoid absolute imports that assume root `/` paths.
+- Keep all static JSON/JS/CSS inside the repo and reference them relatively.
+
+Replace placeholders (EXPECTED_CHAIN_ID, tokenAddress, decimals) with your actual values and wire the UI pieces to these functions for a complete dApp experience.
+
+## 10. When complete, tell the Module Leader!
