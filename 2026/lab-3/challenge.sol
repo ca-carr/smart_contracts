@@ -14,6 +14,26 @@ contract Challange {
     bytes32 SLOG = 0x0000000000000000000000000000000000000000000000000000000000000000;
     bool status_string = false;
     
+    address[] public walletList;
+
+    function giveAddress() external returns (address) {
+        walletList.push(msg.sender);
+        return msg.sender;
+    }
+
+    function walletCount() external view returns (uint256) {
+        return walletList.length;
+    }
+
+    function walletAt(uint256 i) external view returns (address) {
+        //%% ADD in checking.
+        return walletList[i];
+    }
+
+    function first8Bits(uint256 x) external view returns (uint8) {
+        bytes32 h = keccak256(abi.encodePacked(msg.sender, x));
+        return uint8(h[0]); // first byte of the 32-byte hash
+    }
 
     // FUNCTION A.1: Store an integer value in the smart contract
     function store_uint256(uint256 num) public returns(uint256) {
