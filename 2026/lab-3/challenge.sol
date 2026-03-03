@@ -14,26 +14,10 @@ contract Challange {
     bytes32 SLOG = 0x0000000000000000000000000000000000000000000000000000000000000000;
     bool status_string = false;
     
+    // PART D
     address[] public walletList;
+    bool solved_d = false;
 
-    function giveAddress() external returns (address) {
-        walletList.push(msg.sender);
-        return msg.sender;
-    }
-
-    function walletCount() external view returns (uint256) {
-        return walletList.length;
-    }
-
-    function walletAt(uint256 i) external view returns (address) {
-        //%% ADD in checking.
-        return walletList[i];
-    }
-
-    function first8Bits(uint256 x) external view returns (uint8) {
-        bytes32 h = keccak256(abi.encodePacked(msg.sender, x));
-        return uint8(h[0]); // first byte of the 32-byte hash
-    }
 
     // FUNCTION A.1: Store an integer value in the smart contract
     function store_uint256(uint256 num) public returns(uint256) {
@@ -121,5 +105,49 @@ contract Challange {
     // PART C: 
     // Write a function to check if poth puzzles are solved, then return the values of the solutions
     // Comment on the security of this smart contract puzzle
+
+    // PART D: Solve the final puzzle and answer the questions
+
+    // what does this function do? What do the modifiers external and returns mean? 
+    function giveAddress() external returns (address) {
+        walletList.push(msg.sender);
+        return msg.sender;
+    }
+
+    // What doe sthis function do. What does the 'view' keyword mean here    
+    function walletCount() external view returns (uint256) {
+        return walletList.length;
+    }
+
+    // what does this function do? How would you change this function to prevent an error 
+    // if you wanted to call a value that is undefined? 
+    function walletAt(uint256 i) external view returns (address) {
+        return walletList[i];
+    }
+
+
+    // What does this function do?
+    function first8Bits(uint256 x) external view returns (uint8) {
+        bytes32 h = keccak256(abi.encodePacked(msg.sender, x));
+        return uint8(h[0]);
+    }
+
+    // What does this function do in comparison to the function named almost the same above. Why are they names like that?
+    // What does the 'internal pure' thing mean in comparison to the 'external view'
+    function _first8Bits(address a, uint256 x) internal pure returns (uint8) {
+        return uint8(keccak256(abi.encodePacked(a, x))[0]);
+    }
+
+    // Finally, this function forms a puzzle. What is the puzzle, and how do you solve it?
+    // Is this puzzle unique to you?
+    // Find a solution to the puzzle.
+    function solve_d(uint256 x) external returns (bool) {
+        walletList.push(msg.sender);
+            if (_first8Bits(msg.sender, x) == 0) {
+                solved_d = true;
+                return true;
+            }
+        return false;
+    }
 
 }
